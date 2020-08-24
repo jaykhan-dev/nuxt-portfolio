@@ -1,5 +1,6 @@
 <template>
   <v-app dark>
+    <Navigation />
     <v-main>
       <v-container>
         <nuxt />
@@ -12,7 +13,12 @@
 </template>
 
 <script>
+import Navigation from '@/components/Navigation'
+
 export default {
+  components: {
+    Navigation,
+  },
   data() {
     return {
       clipped: false,
