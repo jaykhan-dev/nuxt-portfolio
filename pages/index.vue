@@ -103,7 +103,7 @@ export default {
   }
 
   50% {
-    transform: scale(2);
+    transform: scale(1.5);
     border-color: white;
     background: white;
   }

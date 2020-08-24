@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Stuff and shit</h1>
     <nuxt-content :document="doc" />
   </div>
 </template>
@@ -8,8 +7,8 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const doc = await $content(params.slug || 'index').fetch()
-    return { doc, params }
+    const doc = await $content(`/services/${params.slug}` || 'index').fetch()
+    return { doc }
   },
 }
 </script>
