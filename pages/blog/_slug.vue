@@ -13,7 +13,9 @@
               >
                 <v-list-item-content>
                   <v-list-item-title :class="item.depth === 3 ? 'ml-3' : ''">
-                    <a :href="'#' + item.id">{{ item.text }}</a>
+                    <nuxt-link :to="{ hash: '#' + item.id }">{{
+                      item.text
+                    }}</nuxt-link>
                   </v-list-item-title>
                 </v-list-item-content>
               </v-list-item>
@@ -21,6 +23,9 @@
           </v-list>
         </v-card>
       </v-col>
+      <pre>
+      {{ doc.toc }}
+      </pre>
       <v-col>
         <nuxt-content :document="doc" />
       </v-col>
