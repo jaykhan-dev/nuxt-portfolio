@@ -17,7 +17,7 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-  css: [],
+  css: ['~/assets/style/global/style.scss'],
   plugins: [],
   components: true,
   buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/vuetify'],
