@@ -1,21 +1,25 @@
 <template>
   <v-container>
     <v-row>
-      <v-col>
-        <v-carousel
-          v-if="doc.images.length > 1"
-          cycle
-          interval="5000"
-          :show-arrows="false"
-        >
-          <v-carousel-item
-            v-for="(image, index) in doc.images"
-            :key="index"
-            :src="image"
-          >
-          </v-carousel-item>
-        </v-carousel>
-        <v-img v-else :src="doc.images[0]"></v-img>
+      <v-col cols="2" class="hidden-sm-and-below">
+        <v-card class="mx-auto" max-width="400" tile>
+          <v-list nav dense>
+            <v-subheader>Table Of Contents</v-subheader>
+            <v-list-item-group v-model="item" color="primary">
+              <v-list-item
+                v-for="(item, i) in doc.toc"
+                :key="i"
+                :inactive="inactive"
+              >
+                <v-list-item-content>
+                  <v-list-item-title :class="item.depth === 3 ? 'ml-3' : ''">
+                    <a :href="'#' + item.id">{{ item.text }}</a>
+                  </v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list-item-group>
+          </v-list>
+        </v-card>
       </v-col>
       <v-col>
         <nuxt-content :document="doc" />
@@ -33,4 +37,9 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+a {
+  text-decoration: none;
+  color: white;
+}
+</style>
