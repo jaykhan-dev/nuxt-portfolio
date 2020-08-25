@@ -1,0 +1,13 @@
+.nuxt-content-highlight {
+
+  pre {
+    border: solid 1px grey;
+    border-radius: 10px;
+    background: transparent !important;
+
+    code {
+      background: transparent;
+      text-shadow: none;
+    }
+  }
+}
