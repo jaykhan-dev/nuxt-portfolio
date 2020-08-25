@@ -4,13 +4,19 @@
       <v-col cols="12" md="6" offset-md="2" lg="3" offset-lg="3">
         <h1 class="display-4 red--text">Riza Khan</h1>
         <v-row class="pl-4">
-          <v-btn outlined class="mt-4" to="/services">Services</v-btn>
+          <v-btn outlined class="mt-4" @click="goToLocation('/services')"
+            >Services</v-btn
+          >
         </v-row>
         <v-row class="pl-4">
-          <v-btn outlined class="mt-4" to="/projects">Past Projects</v-btn>
+          <v-btn outlined class="mt-4" @click="goToLocation('/projects')"
+            >Past Projects</v-btn
+          >
         </v-row>
         <v-row class="pl-4">
-          <v-btn outlined class="mt-4" to="/blog">Blog</v-btn>
+          <v-btn outlined class="mt-4" @click="goToLocation('/blog')"
+            >Blog</v-btn
+          >
         </v-row>
       </v-col>
     </v-row>
@@ -63,6 +69,16 @@ export default {
       const dotsArray = document.querySelectorAll('.dot')
       dotsArray[num].classList.toggle('twinkle')
     },
+    goToLocation(location) {
+      const dotsArray = document.querySelectorAll('.dot')
+      dotsArray.forEach((dot) => {
+        dot.style.right = dot.style.top = '50%'
+      })
+
+      setTimeout(() => {
+        this.$nuxt.$router.push(location)
+      }, 500)
+    },
   },
 }
 </script>
@@ -78,6 +94,7 @@ export default {
   background-color: grey;
   border-radius: 50px;
   overflow: hidden;
+  transition: all 0.5s ease;
   animation: fade-in 0.5s ease forwards;
 }
 
