@@ -21,7 +21,7 @@ export default {
   data() {
     return {
       locations: [
-        { name: 'Service', link: '/service' },
+        { name: 'Services', link: '/services' },
         { name: 'Past Projects', link: '/projects' },
         { name: 'Blog', link: '/blog' },
       ],
