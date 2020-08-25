@@ -1,5 +1,4 @@
 .nuxt-content-highlight {
-
   pre {
     border: solid 1px grey;
     border-radius: 10px;
@@ -8,6 +7,10 @@
     code {
       background: transparent;
       text-shadow: none;
+
+      .token.operator {
+        background: transparent;
+      }
     }
   }
 }
