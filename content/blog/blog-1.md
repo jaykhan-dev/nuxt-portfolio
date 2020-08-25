@@ -1,9 +1,9 @@
 ---
 title: Automated Slider
 
-description: 'A tutorial on how to build a automated slider in vanilla JS'
+description: A tutorial on how to build a automated slider in vanilla JS
 
-previewImage: https://i.pinimg.com/originals/c4/f7/5b/c4f75b8a03e890dd24623a20ccab83d7.jpg
+previewImage: ~/assets/images/slider.png
 
 categories:
 - Vanilla Javascript
@@ -15,31 +15,39 @@ images:
 
 # Automated Slider
 
-```javascript
-function myMethod() {
-  for (let x = 0; x < array.length; x++) {
-    console.log(x)
-  }
+In this tutorial, I will explain how to create a automated slider. Pretty much all of the front-end libraries (ie, Bootstrap, Vuetify) support some kind of feature rich carousel.
+
+This is helpful if you are in a hurry, however, it does not allow you to learn the inner workings of Javascript, which, when learnt considerably expand your horizons in-terms of customizability and troubleshooting.
+
+Here we will display content inside of an array of items and we can customize the slider so it displays multiple items at a time. This feature may be useful to most users.
+
+## HTML
+Here is the minimum HTML you will need:
+
+```html
+<body>
+  <div class="slider"></div>
+</body>
+```
+
+Believe it or not, that is all you need. There are additional components we can add (navigation buttons?), but we won't work about that complexity for the time being.
+
+## CSS
+Since this is an example, we will try to keep the CSS to a minimum. All that matters right now is that the `.slider` is centered on the screen. Since the slides themselves will be responsive, it doesn't matter if we specify a width, however, for this case we will explicitly put it at `600px` width. The height can be anything that you are comfortable with.
+
+```css
+body {
+  display: flex;
+  height: 100vh; // helps center the .slider vertically
+}
+
+.slider {
+  margin: auto;
+  width: 600px;
+  height: 300px;
+  boder: solid 1px black;
+  border-radius:10px;
+  overflow: none;
 }
 ```
 
-## Header 1
-
-Some content for header 1
-
-
-## Header 2
-
-Some content for header 2
-
-### Sub Header
-
-This is sub header of header 2
-
-
-### Sub Header 3
-
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-
-## Sub Header 2nd depth
