@@ -1,15 +1,37 @@
 <template>
   <div>
-    <v-system-bar height="25" class="transparent">
+    <v-toolbar>
+      <v-toolbar-title>
+        <nuxt-link to="/" class="display-2 white--text">khanr</nuxt-link>
+      </v-toolbar-title>
       <v-spacer></v-spacer>
-      <span class="white--text">{{ new Date() }}</span>
-    </v-system-bar>
-    <v-toolbar> </v-toolbar>
+      <v-btn
+        v-for="(location, index) in locations"
+        :key="index"
+        :to="location.link"
+        class="mx-2 red hidden-sm-and-down"
+        >{{ location.name }}</v-btn
+      >
+    </v-toolbar>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      locations: [
+        { name: 'Service', link: '/service' },
+        { name: 'Past Projects', link: '/projects' },
+        { name: 'Blog', link: '/blog' },
+      ],
+    }
+  },
+}
 </script>
 
-<style scoped></style>
+<style scoped>
+a {
+  text-decoration: none;
+}
+</style>
