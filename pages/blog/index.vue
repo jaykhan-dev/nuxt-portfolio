@@ -1,6 +1,11 @@
 <template>
   <v-container>
     <v-row>
+      <v-col>
+        <v-input></v-input>
+      </v-col>
+    </v-row>
+    <v-row>
       <v-col
         v-for="(blog, index) in blogs"
         :key="index"
@@ -22,7 +27,7 @@
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn color="orange" outlined :to="blog.path">
+            <v-btn color="primary" :to="blog.path">
               Read More
             </v-btn>
           </v-card-actions>
@@ -36,7 +41,6 @@
 export default {
   async asyncData({ $content, params }) {
     const blogs = await $content('blog', params.slug).fetch()
-
     return { blogs }
   },
 }

@@ -1,21 +1,15 @@
 <template>
   <v-container>
     <v-row>
-      <v-col cols="2" class="hidden-sm-and-below">
-        <v-card class="mx-auto" max-width="400" tile>
+      <v-col cols="12" md="5" lg="3">
+        <v-card class="mx-0" max-width="800" tile>
           <v-list nav dense>
             <v-subheader>Table Of Contents</v-subheader>
             <v-list-item-group v-model="item" color="primary">
-              <v-list-item
-                v-for="(item, i) in doc.toc"
-                :key="i"
-                :inactive="inactive"
-              >
+              <v-list-item v-for="(item, i) in doc.toc" :key="i">
                 <v-list-item-content>
                   <v-list-item-title :class="item.depth === 3 ? 'ml-3' : ''">
-                    <nuxt-link :to="{ hash: '#' + item.id }">{{
-                      item.text
-                    }}</nuxt-link>
+                    <NuxtLink :to="`#${item.id}`">{{ item.text }}</NuxtLink>
                   </v-list-item-title>
                 </v-list-item-content>
               </v-list-item>
@@ -23,9 +17,6 @@
           </v-list>
         </v-card>
       </v-col>
-      <pre>
-      {{ doc.toc }}
-      </pre>
       <v-col>
         <nuxt-content :document="doc" />
       </v-col>

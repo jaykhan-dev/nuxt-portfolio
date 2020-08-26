@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-toolbar>
+    <v-toolbar fixed>
       <v-toolbar-title>
         <nuxt-link to="/" class="display-2 white--text">khanr</nuxt-link>
       </v-toolbar-title>
