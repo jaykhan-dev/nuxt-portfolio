@@ -24,14 +24,6 @@ export default {
   modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxt/content'],
   axios: {},
   content: {},
-  router: {
-    scrollBehavior(to) {
-      if (to.hash) {
-        return window.scrollTo({ top: document.querySelector(to.hash).offsetTop + window.innerHeight, behavior: 'smooth' })
-        return window.scrollTo({ top: 0, behavior: 'smooth' })
-      }
-    }
-  },
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
