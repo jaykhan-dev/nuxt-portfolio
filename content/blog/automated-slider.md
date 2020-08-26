@@ -23,6 +23,8 @@ Pretty much all of the front-end libraries (ie, Bootstrap, Vuetify) support some
 
 Here we will display content inside of an array of items and we can customize the slider so it displays multiple items at a time. This feature may be useful to most users.
 
+<dynamic-image filename="slider-gif.gif"></dynamic-image>
+
 ## HTML
 Here is the minimum HTML you will need:
 
@@ -56,8 +58,9 @@ body {
 
 .slide {
   height: 100%;
-  border: solid 1px red
+  border: solid 1px red;
   transition: all .5s ease; /* This is important to display a smooth transition vs a quick jump of the slides */
+  position: absolute; /* This is critical! The animation will not work without it */
 }
 ```
 
@@ -186,5 +189,5 @@ function move() {
 }
 ```
 
-So what this function does is, in conjunction with the CSS rule `transition: all 0.5s ease;` you will see a smooth transition. Once that is complete, we have another `setTimeout` method that will remove the last element of the `slides` array. Again, you want to do this in a setTimeout method because without it, the Javascript will simply remove the element before the transition is complete.
+So what this function does is, in conjunction with the CSS rule `transition: all 0.5s ease;` you will see a smooth transition. Once that is complete, we have another `setTimeout` method that will remove the last element of the `slides` array. Again, you want to do this in a `setTimeout` method because without it, the Javascript will simply remove the element before the transition is complete.
 
