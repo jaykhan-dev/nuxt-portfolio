@@ -8,9 +8,11 @@
             <v-list-item-group v-model="item" color="primary">
               <v-list-item v-for="(item, i) in doc.toc" :key="i">
                 <v-list-item-content>
-                  <v-list-item-title :class="item.depth === 3 ? 'ml-3' : ''">
-                    <NuxtLink :to="`#${item.id}`">{{ item.text }}</NuxtLink>
-                  </v-list-item-title>
+                  <NuxtLink :to="`#${item.id}`">
+                    <v-list-item-title :class="item.depth === 3 ? 'ml-3' : ''">
+                      {{ item.text }}
+                    </v-list-item-title>
+                  </NuxtLink>
                 </v-list-item-content>
               </v-list-item>
             </v-list-item-group>
