@@ -13,6 +13,7 @@ export default {
   props: {
     filename: {
       type: String,
+      default: null,
       required: false,
     },
     caption: {

@@ -23,10 +23,13 @@
             <p>{{ blog.description }}</p>
           </v-card-text>
           <v-card-actions>
+            <pre>{{ blog.slug }}</pre>
             <v-spacer></v-spacer>
-            <v-btn color="primary" :to="blog.path">
-              Read More
-            </v-btn>
+            <NuxtLink :to="blog.path">
+              <v-btn color="primary">
+                Read More
+              </v-btn>
+            </NuxtLink>
           </v-card-actions>
         </v-card>
       </v-col>
