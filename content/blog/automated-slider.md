@@ -3,27 +3,23 @@ title: Automated Slider
 
 description: A tutorial on how to build a automated slider in vanilla JS
 
-previewImage: ~/assets/images/slider.png
+previewImage: slider/slider.png
 
 categories:
 - Vanilla Javascript
-
-images:
--
-
 ---
 
 # Automated Slider
 
-In this tutorial, we will learn how to create a automated slider(carousel). Please feel free to checkout this sliders **[Codepen](https://codepen.io/riza-khan/pen/dyMveop)**.
+In this tutorial, we will learn how to create a automated slider(carousel). Please feel free to checkout this sliders **[Codepen](https://codepen.io/riza-khan/pen/dyMveop)** which shows a rudiemntary version of the slider.
 
-The ultimate purpose of this tutorial is not to create a slider, but rather the thought process required to come up with one, because this is maybe the 100th different way to make one.
+My main focus would be to understand the reasoning behind doing what we are doing. Practicing the concepts, will allows us to build more and more complex projects as we practice them.
 
-Pretty much all of the front-end libraries (ie, Bootstrap, Vuetify) support some kind of feature rich carousel. This is helpful if you are in a hurry, however, it does not allow you to learn the inner workings of Javascript, which, when learnt considerably expand your horizons in-terms of customizability and troubleshooting.
+This is what we will build (sorry for the jumpy gif):
 
-Here we will display content inside of an array of items and we can customize the slider so it displays multiple items at a time. This feature may be useful to most users.
+<dynamic-image filename="slider/slider-gif.gif"></dynamic-image>
 
-<dynamic-image filename="slider-gif.gif"></dynamic-image>
+Here, we have three 'cards' that show on `slide-container` at one time. Part of the feature in the slider is the ability to change the number of images shown. We can change it to just one, or three or a hundred (for arguments sake).
 
 ## HTML
 Here is the minimum HTML you will need:
@@ -38,12 +34,12 @@ Believe it or not, that is all you need. There are additional components we can 
 <img src="~/assets/images/slider.png">
 ## CSS
 
-Since this is an example, we will try to keep the CSS to a minimum. All that matters right now is that the `.slider` is centered on the screen. The internal slides will dynamically adjust to the parent elements diamensions (more on this coming up).
+Since this is an example, we will try to keep the CSS to a minimum. All that matters right now is that the `.slide-container` is centered on the screen. The internal `slides` will dynamically conform to the size of their container depending on a few criterias that we will get to in the Javascript.
 
 ```css
 body {
   display: flex;
-  height: 100vh; // helps center the .slider vertically
+  height: 100vh; /* helps center the .slider vertically */
 }
 
 .slider {
@@ -52,15 +48,15 @@ body {
   height: 300px;
   border: solid 1px black;
   border-radius:10px;
-  overflow: none;
   display: flex; /* This will put the slides next to each other */
+  overflow: hidden; /* This rule is disabled in the codepen and once you read through the article you will find out why. */
 }
 
 .slide {
   height: 100%;
   border: solid 1px red;
   transition: all .5s ease; /* This is important to display a smooth transition vs a quick jump of the slides */
-  position: absolute; /* This is critical! The animation will not work without it */
+  position: absolute; /* This is critical! The animation will not work without it. CSS properties like left, right, top, bottom only work with elements with this property */
 }
 ```
 
@@ -79,7 +75,6 @@ const data = [
   { number: 5, name: 'Five' },
 ]
 ```
-The number and name will appear on each **slide** element much like a `card` component you may be familiar with from certain CSS frameworks.
 
 ### Slider Variables
 Lets setup all the variables needed for this animation:
@@ -93,7 +88,8 @@ const slideWidth = sliderContainer.offsetWidth / slidesInContainer // determine 
 
 ### Setting Up `SlideContainer`
 
-Now we have the variables setup,we can setup the `slideContainer` with the `slide` div's. You will see what I am referring to shortly:
+Let us add the internal cuts of the `slideContainer`. We want to create a `for` loop that will allow us add the number of slides we want to add to the container. Hint, the `slidesInContainer` variable above.
+
 
 ```javascript
 for (let x = 0; x < slidesInContainer; x++) {
@@ -114,10 +110,11 @@ If you inspect the HTML in the browser, you will see something like this:
   <div class="slide"></div>
 </div>
 ```
+We wanted to see three slides, and there they are!
 
 ### Setting Up Each Individual Slide
 
-When we were setting up the slides in the `for` loop, you will also notice that we added a function to which we passed the `slide`. That function will help us add the content inside the slide that is available in our `data` array.
+When we were setting up the slides in the `for` loop, you will also notice that we added a function, `setupSlide`, to which we passed the `slide` object. That function will help us add the content inside the slide that is available in our `data` array.
 
 ```javascript
 function setupSlide(element, dataPosition) {
@@ -131,17 +128,22 @@ function setupSlide(element, dataPosition) {
   element.appendChild(number)
 }
 ```
+Basically, creates a `h3` and `p` element and addes the informatoin from the `data` array above.
 
 ### Slider Animation
 
-Now, we see all that content from the array added to the `slide`. Its not pretty, but hey, we're making progress.
+Now that we have our slides setup, its time to implement the sliding animation. But before we do that, lets step back and think about what we need to do.
 
-As programmers we need to strip down the problem to individual steps. In this case, lets run through what we need to do in order to create a smooth transition.
+As programmers, stripping the problem to small parts is essential to solving the whole thing:
 
 1. We create another `div` and append as the first-child of the `.slide-container`.
 2. We then add the content to that div from the array. Now since we are already showing three slides with number 1, 2, 3 from the data array, the next item will slide in from the left would be number 4.
 3. Start the slide animation.
-4. Delete the last slide.
+4. Delete the last slide
+
+The above steps should look something like this. I've removed the CSS property `overflow: hidden` and you should see whats going on behind the screens. A slide is being created, appended the the beginning of the `slide-container` and then the animation starts. And as soon as the animation is over, the last slide is deleted.
+
+<dynamic-image filename="slider/showoverflow.gif"></dynamic-image>
 
 Lets illustrate the above in the markup below:
 
@@ -189,5 +191,6 @@ function move() {
 }
 ```
 
-So what this function does is, in conjunction with the CSS rule `transition: all 0.5s ease;` you will see a smooth transition. Once that is complete, we have another `setTimeout` method that will remove the last element of the `slides` array. Again, you want to do this in a `setTimeout` method because without it, the Javascript will simply remove the element before the transition is complete.
+That is really it. You have yourself a automated slider. Now you have many options on what features you may want to add to this slider. Sit back and think about what you want implemented and eventually it will come to you!
 
+Thank you for reading and please don't hesitate to reach out with any and all questions/comments.

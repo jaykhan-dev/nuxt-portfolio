@@ -14,13 +14,8 @@
         lg="3"
       >
         <v-card class="mx-auto" max-width="400">
-          <v-img
-            class="white--text align-end"
-            height="300px"
-            :src="blog.previewImage"
-          >
-            <v-card-title class="display-1">{{ blog.title }}</v-card-title>
-          </v-img>
+          <dynamic-image :filename="blog.previewImage"></dynamic-image>
+          <v-card-title class="display-1">{{ blog.title }}</v-card-title>
           <v-card-subtitle class="pb-0">{{ blog.updatedAt }}</v-card-subtitle>
           <v-card-text class="text--primary">
             <p>{{ blog.description }}</p>

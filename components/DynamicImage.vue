@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-img :src="dynamicImage" class="mx-auto" />
-    <p class="my-4 text-center">
+    <p class="my-4 text-center subtitle-1">
       {{ caption }}
     </p>
   </div>
