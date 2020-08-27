@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-img :src="dynamicImage" class="mx-auto" />
+    <v-img :src="dynamicImage" class="mx-auto" max-height="300" />
     <p class="my-4 text-center subtitle-1">
       {{ caption }}
     </p>
@@ -13,7 +13,7 @@ export default {
   props: {
     filename: {
       type: String,
-      required: true,
+      required: false,
     },
     caption: {
       type: String,
@@ -22,7 +22,9 @@ export default {
   },
   computed: {
     dynamicImage() {
-      return require(`~/assets/images/${this.filename}`)
+      return this.filename
+        ? require(`~/assets/images/${this.filename}`)
+        : '/vuetify-logo.svg'
     },
   },
 }

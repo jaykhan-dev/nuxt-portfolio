@@ -36,17 +36,17 @@
 
 <script>
 export default {
-  data() {
-    return {
-      searchQuery: '',
-    }
-  },
   async asyncData({ $content, params }) {
     const blogs = await $content('blog', params.slug)
       .only(['title', 'updatedAt', 'previewImage', 'categories', 'description'])
       .sortBy('updatedAt', 'asc')
       .fetch()
     return { blogs }
+  },
+  data() {
+    return {
+      searchQuery: '',
+    }
   },
   computed: {
     filteredBlogs() {
