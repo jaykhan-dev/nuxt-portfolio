@@ -2,7 +2,7 @@
   <v-container>
     <v-row>
       <v-col>
-        <v-input></v-input>
+        Search Bar Goes Here
       </v-col>
     </v-row>
     <v-row>
