@@ -16,7 +16,9 @@
         <v-card class="mx-auto" max-width="400">
           <dynamic-image :filename="blog.previewImage"></dynamic-image>
           <v-card-title class="display-1">{{ blog.title }}</v-card-title>
-          <v-card-subtitle class="pb-0">{{ blog.updatedAt }}</v-card-subtitle>
+          <v-card-subtitle class="pb-0 mb-4">{{
+            formatDate(blog.updatedAt)
+          }}</v-card-subtitle>
           <v-card-text class="text--primary">
             <p>{{ blog.description }}</p>
           </v-card-text>
@@ -35,8 +37,17 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const blogs = await $content('blog', params.slug).fetch()
+    const blogs = await $content('blog', params.slug)
+      .only(['title', 'updatedAt', 'previewImage', 'categories', 'description'])
+      .sortBy('updatedAt', 'asc')
+      .fetch()
     return { blogs }
+  },
+  methods: {
+    formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString('en', options)
+    },
   },
 }
 </script>
