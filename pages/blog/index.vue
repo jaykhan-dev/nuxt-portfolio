@@ -1,17 +1,17 @@
 <template>
   <v-container>
     <v-row>
-      <v-col>
-        Search Bar Goes Here
+      <v-col class="ml-auto" cols="6" md="6" lg="3">
+        <v-text-field label="Search" v-model="searchQuery"></v-text-field>
       </v-col>
     </v-row>
     <v-row>
       <v-col
-        v-for="(blog, index) in blogs"
+        v-for="(blog, index) in filteredBlogs"
         :key="index"
         cols="12"
-        md="4"
-        lg="3"
+        md="6"
+        lg="4"
       >
         <v-card class="mx-auto" max-width="400">
           <dynamic-image :filename="blog.previewImage"></dynamic-image>
@@ -36,12 +36,24 @@
 
 <script>
 export default {
+  data() {
+    return {
+      searchQuery: '',
+    }
+  },
   async asyncData({ $content, params }) {
     const blogs = await $content('blog', params.slug)
       .only(['title', 'updatedAt', 'previewImage', 'categories', 'description'])
       .sortBy('updatedAt', 'asc')
       .fetch()
     return { blogs }
+  },
+  computed: {
+    filteredBlogs() {
+      return this.blogs.filter((blog) =>
+        blog.title.toLowerCase().includes(this.searchQuery.toLowerCase())
+      )
+    },
   },
   methods: {
     formatDate(date) {
