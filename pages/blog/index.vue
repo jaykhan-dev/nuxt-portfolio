@@ -22,10 +22,10 @@
           <v-card-text class="text--primary">
             <p>{{ blog.description }}</p>
           </v-card-text>
+          <pre>{{ blog.path }}</pre>
           <v-card-actions>
-            <pre>{{ blog.slug }}</pre>
             <v-spacer></v-spacer>
-            <NuxtLink :to="blog.path">
+            <NuxtLink to="/blog/automated-slider">
               <v-btn color="primary">
                 Read More
               </v-btn>
@@ -41,14 +41,7 @@
 export default {
   async asyncData({ $content, params }) {
     const blogs = await $content('blog', params.slug)
-      .only([
-        'title',
-        'updatedAt',
-        'previewImage',
-        'categories',
-        'description',
-        'slug',
-      ])
+      .only(['title', 'updatedAt', 'previewImage', 'categories', 'description'])
       .sortBy('updatedAt', 'asc')
       .fetch()
     return { blogs }
