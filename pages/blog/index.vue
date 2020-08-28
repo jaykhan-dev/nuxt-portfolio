@@ -24,11 +24,11 @@
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <NuxtLink :to="blog.path">
-              <v-btn color="primary">
+            <nuxt-link :to="blog.path">
+              <v-btn color="orange">
                 Read More
               </v-btn>
-            </NuxtLink>
+            </nuxt-link>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -66,4 +66,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+a {
+  text-decoration: none;
+}
+</style>
