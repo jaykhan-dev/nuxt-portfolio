@@ -24,7 +24,7 @@
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <NuxtLink :to="{ name: 'blog-slug', params: { slug: blog.path } }">
+            <NuxtLink :to="{ name: 'blog-slug', params: { slug: blog.slug } }">
               <v-btn :to="blog.path" color="primary">
                 Read More
               </v-btn>
@@ -40,9 +40,10 @@
 export default {
   async asyncData({ $content, params }) {
     const blogs = await $content('blog', params.slug)
-      .only(['title', 'updatedAt', 'previewImage', 'categories', 'description'])
-      .sortBy('updatedAt', 'asc')
+      .only(['title', 'slug', 'spreviewImage', 'categories', 'description'])
+      .sortBy('createdAt', 'desc')
       .fetch()
+
     return { blogs }
   },
   data() {
