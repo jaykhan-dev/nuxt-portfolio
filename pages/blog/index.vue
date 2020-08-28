@@ -24,11 +24,9 @@
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <NuxtLink :to="blog.path">
-              <v-btn color="primary">
-                Read More
-              </v-btn>
-            </NuxtLink>
+            <v-btn :to="blog.path" color="primary">
+              Read More
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
