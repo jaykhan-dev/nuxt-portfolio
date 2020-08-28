@@ -24,7 +24,7 @@
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <NuxtLink :to="{ name: 'blog-slug', params: { slug: blog.slug } }">
+            <NuxtLink :to="{ name: 'blog-slug', params: { slug: blog.path } }">
               <v-btn :to="blog.path" color="primary">
                 Read More
               </v-btn>
