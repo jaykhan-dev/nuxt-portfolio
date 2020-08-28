@@ -22,10 +22,9 @@
           <v-card-text class="text--primary">
             <p>{{ blog.description }}</p>
           </v-card-text>
-          <pre>{{ blog.path }}</pre>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <NuxtLink to="/blog/automated-slider">
+            <NuxtLink :to="blog.path">
               <v-btn color="primary">
                 Read More
               </v-btn>
