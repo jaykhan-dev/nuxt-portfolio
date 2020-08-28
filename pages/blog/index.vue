@@ -2,7 +2,7 @@
   <v-container>
     <v-row>
       <v-col class="ml-auto" cols="6" md="6" lg="3">
-        <v-text-field label="Search" v-model="searchQuery"></v-text-field>
+        <v-text-field v-model="searchQuery" label="Search"></v-text-field>
       </v-col>
     </v-row>
     <v-row>
@@ -40,7 +40,7 @@
 export default {
   async asyncData({ $content, params }) {
     const blogs = await $content('blog', params.slug)
-      .only(['title', 'slug', 'spreviewImage', 'categories', 'description'])
+      .only(['title', 'slug', 'previewImage', 'categories', 'description'])
       .sortBy('createdAt', 'desc')
       .fetch()
 
