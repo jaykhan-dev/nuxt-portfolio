@@ -2,7 +2,7 @@
   <v-card class="mx-0" max-width="800" tile>
     <v-list nav dense>
       <v-subheader>Table Of Contents</v-subheader>
-      <v-list-item-group v-model="item" color="primary">
+      <v-list-item-group v-if="toc" color="primary">
         <NuxtLink v-for="(item, i) in toc" :key="i" :to="`#${item.id}`">
           <v-list-item>
             <v-list-item-content>
@@ -21,7 +21,7 @@
 export default {
   props: {
     toc: {
-      type: Object,
+      type: Array,
       required: true,
     },
   },
