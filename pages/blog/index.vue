@@ -13,7 +13,7 @@
         md="6"
         lg="4"
       >
-        <v-card class="mx-auto" max-width="400">
+        <v-card class="mx-auto" max-width="600">
           <dynamic-image :filename="blog.previewImage"></dynamic-image>
           <v-card-title class="display-1">{{ blog.title }}</v-card-title>
           <v-card-subtitle class="pb-0 mb-4">{{

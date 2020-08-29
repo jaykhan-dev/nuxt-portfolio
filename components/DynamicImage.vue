@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-img :src="dynamicImage" class="mx-auto" max-height="300" />
+    <v-img :src="dynamicImage" class="mx-auto" max-height="600" />
     <p class="my-4 text-center subtitle-1">
       {{ caption }}
     </p>
@@ -18,6 +18,7 @@ export default {
     },
     caption: {
       type: String,
+      default: null,
       required: false,
     },
   },
