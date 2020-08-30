@@ -11,7 +11,7 @@ categories:
 
 # Automated Slider
 
-In this tutorial, we will learn how to create a automated slider(carousel). Please feel free to checkout tjks sliders **[Codepen](https://codepen.io/riza-khan/pen/dyMveop)** which shows a rudiemntary version of the slider.
+In this tutorial, we will learn how to create a automated slider(carousel). Please feel free to checkout this sliders **[Codepen](https://codepen.io/riza-khan/pen/dyMveop)** which shows a rudiemntary version of the slider.
 
 My main focus would be to understand the reasoning behind doing what we are doing. Practicing the concepts, will allows us to build more and more complex projects as we practice them.
 
