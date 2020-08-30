@@ -15,8 +15,8 @@
       >
         <v-card class="mx-auto" max-width="600">
           <dynamic-image :filename="blog.previewImage"></dynamic-image>
-          <v-card-title class="display-1">{{ blog.title }}</v-card-title>
-          <v-card-subtitle class="pb-0 mb-4">{{
+          <v-card-title class="text-h5">{{ blog.title }}</v-card-title>
+          <v-card-subtitle class="pb-0 mb-4 overline">{{
             formatDate(blog.updatedAt)
           }}</v-card-subtitle>
           <v-card-text class="text--primary">
