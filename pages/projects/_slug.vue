@@ -1,23 +1,10 @@
 <template>
   <v-container>
     <v-row>
-      <v-col>
-        <v-carousel
-          v-if="doc.images.length > 1"
-          cycle
-          interval="5000"
-          :show-arrows="false"
-        >
-          <v-carousel-item
-            v-for="(image, index) in doc.images"
-            :key="index"
-            :src="image"
-          >
-          </v-carousel-item>
-        </v-carousel>
-        <v-img v-else :src="doc.images[0]"></v-img>
+      <v-col cols="12" md="5" lg="3">
+        <TableOfContents :toc="doc.toc" />
       </v-col>
-      <v-col>
+      <v-col cols="12" md="6" lg="9">
         <nuxt-content :document="doc" />
       </v-col>
     </v-row>
@@ -25,12 +12,15 @@
 </template>
 
 <script>
+import TableOfContents from '@/components/TableOfContents'
+
 export default {
+  components: {
+    TableOfContents,
+  },
   async asyncData({ $content, params }) {
-    const doc = await $content('blog', params.slug).fetch()
+    const doc = await $content('projects', params.slug).fetch()
     return { doc }
   },
 }
 </script>
-
-<style scoped></style>
