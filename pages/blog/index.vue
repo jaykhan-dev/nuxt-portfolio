@@ -78,4 +78,7 @@ export default {
 a {
   text-decoration: none;
 }
+.v-card__title {
+  word-break: break-word;
+}
 </style>
