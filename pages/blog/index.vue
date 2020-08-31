@@ -13,24 +13,20 @@
         md="6"
         lg="4"
       >
-        <v-card class="mx-auto" max-width="600">
-          <dynamic-image :filename="blog.previewImage"></dynamic-image>
-          <v-card-title class="text-h5">{{ blog.title }}</v-card-title>
-          <v-card-subtitle class="pb-0 mb-4 overline">{{
-            formatDate(blog.updatedAt)
-          }}</v-card-subtitle>
-          <v-card-text class="text--primary">
-            <p>{{ blog.description }}</p>
-          </v-card-text>
-          <v-card-actions>
-            <v-spacer></v-spacer>
-            <NuxtLink :to="{ name: 'blog-slug', params: { slug: blog.slug } }">
-              <v-btn color="primary">
-                Read More
-              </v-btn>
-            </NuxtLink>
-          </v-card-actions>
-        </v-card>
+        <v-hover v-slot:default="{ hover }">
+          <NuxtLink :to="{ name: 'blog-slug', params: { slug: blog.slug } }">
+            <v-card :class="{ grow: hover }" class="mx-auto" max-width="600">
+              <dynamic-image :filename="blog.previewImage"></dynamic-image>
+              <v-card-title class="text-h5">{{ blog.title }}</v-card-title>
+              <v-card-subtitle class="pb-0 mb-4 overline">{{
+                formatDate(blog.updatedAt)
+              }}</v-card-subtitle>
+              <v-card-text class="text--primary">
+                <p>{{ blog.description }}</p>
+              </v-card-text>
+            </v-card>
+          </NuxtLink>
+        </v-hover>
       </v-col>
     </v-row>
   </v-container>
@@ -78,7 +74,12 @@ export default {
 a {
   text-decoration: none;
 }
+
 .v-card__title {
   word-break: break-word;
+}
+
+.v-card {
+  transition: all 0.5s ease;
 }
 </style>
