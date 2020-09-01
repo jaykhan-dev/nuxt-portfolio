@@ -33,7 +33,7 @@ export default {
       id: process.env.GOOGLE_ANALYTICS_ID,
     },
   },
-  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxt/content'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxt/content', 'nuxt-imagemin'],
   axios: {},
   content: {},
   vuetify: {
