@@ -95,7 +95,7 @@ export default {
   background-color: grey;
   border-radius: 50px;
   overflow: hidden;
-  transition: all 0.5s ease;
+  transition: all 0.6s ease;
   animation: fade-in 0.5s ease forwards;
 }
 
