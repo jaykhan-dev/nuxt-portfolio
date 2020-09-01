@@ -26,14 +26,18 @@ export default {
     '@nuxtjs/vuetify',
     '@nuxtjs/google-analytics',
     '@nuxtjs/dotenv',
+    '@aceforth/nuxt-optimized-images',
   ],
+  optimizedImages: {
+    optimizeImages: true,
+  },
   googleAnalytics: { id: 'UA-12301-2' },
   publicRuntimeConfig: {
     googleAnalytics: {
       id: process.env.GOOGLE_ANALYTICS_ID,
     },
   },
-  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxt/content', 'nuxt-imagemin'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxt/content'],
   axios: {},
   content: {},
   vuetify: {
