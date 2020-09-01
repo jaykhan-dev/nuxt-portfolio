@@ -1,6 +1,11 @@
 <template>
   <div>
-    <v-img :src="dynamicImage" class="mx-auto" max-height="600" />
+    <v-img
+      :src="dynamicImage"
+      class="mx-auto"
+      max-height="600"
+      loading="lazy"
+    />
     <p class="my-4 text-center subtitle-1">
       {{ caption }}
     </p>
