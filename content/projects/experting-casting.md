@@ -1,20 +1,19 @@
 ---
 title: Expert Casting
 description: A Wordpress website built for a client in Vancouver
-previewImage: generic/code.jpg
+previewImage: expertcasting/homepage.png
 ---
 
-# Project 2
-This is some Elit placeat laborum sint iste non illum Tempora alias error accusantium doloremque molestiae Nulla asperiores aliquid amet expedita dolores Quam debitis accusantium laborum autem consectetur ducimus. Voluptatem exercitationem quas veniam quod iure. Molestias vel pariatur unde pariatur doloremque. Libero ex nulla tempore ullam impedit Cumque illo repellat optio possimus accusamus Numquam vitae perspiciatis at ipsa quaerat. Beatae assumenda in numquam eaque quod? Deleniti soluta dicta aliquid voluptates eum! Quisquam quas non laboriosam voluptates magni Ad excepturi facilis quos facilis explicabo Maxime iste placeat inventore iste adipisci ipsam? Magnam accusantium velit libero laudantium ducimus amet Beatae in officia maxime accusantium laboriosam
+# Expert Casting (Wordpress Website)
 
-Lorem excepturi doloremque itaque ratione cupiditate Fugit neque dignissimos itaque natus omnis ducimus quas Voluptatibus itaque nulla suscipit iste cum Nihil neque veritatis eius quis aspernatur Expedita eligendi nostrum perspiciatis quidem quas. Aspernatur error omnis ullam quidem repellendus? Sit nihil eligendi eligendi vitae aut quo iusto voluptas amet quos Laboriosam enim quo libero nihil laudantium? Blanditiis consequuntur dolorum inventore facilis autem ducimus animi esse quas Commodi ipsa delectus obcaecati cupiditate in Architecto repellendus hic repellendus vel deserunt vel Porro minus soluta sapiente provident nostrum Deserunt non natus ullam laboriosam molestiae. Pariatur soluta illum ut repellendus rerum velit mollitia? Nemo libero labore dicta iure quam dignissimos. Odio soluta minima minima minus cum. Ea eos aliquam modi consequuntur dolor Consequuntur ullam pariatur tempora tempora impedit? Aspernatur ad quos nam fugit maiores Accusantium cum ex quod animi sapiente, facilis Hic hic omnis praesentium placeat error. Quod at rerum ducimus perferendis consequuntur amet, voluptas Ipsam quae molestias fuga nulla commodi Aspernatur quo aut possimus neque iste, laborum? Odit excepturi earum illum ipsam ex Voluptas exercitationem ipsam sint neque in. Beatae modi voluptatem reiciendis itaque inventore. Iusto perferendis deleniti minus ad a officia Placeat at distinctio ullam illo ipsa Velit quibusdam voluptatem minus qui ut!
+My first ever contract on Upwork was with this client. They had asked me to rebuild <a href="http://expertcasting.ca/" target="_blank">this</a> website that was not mobile friendly or looked particulary good. I was very apprehensive when I got this contract as I didn't have any experience at the time.
 
-## Subtitle 1
-Lorem delectus iusto ipsam facilis necessitatibus nulla? Unde libero provident earum ipsa voluptatibus! Incidunt illum autem aliquam quos magni Officiis?
+I ended up picking up a Wordpress course on Udemy and that really opened up my eyes on how to build themes in Wordpress. Althought in hindsight, I would have purchased a theme and inputted the information that way, but I wanted to really start off as a developer and thus ended up coding everything myself.
 
-## Subtitle 2
-Lorem quos ex iure laboriosam maxime Nam obcaecati tempora facere quae exercitationem omnis soluta Mollitia odit eveniet ea repellendus corrupti Hic non ab autem neque consectetur Expedita culpa minus illum!
+I've learnt a lot about web develoment since, but this site is near and dear to my heart because it really put me on the digital map as a creator and developer.
 
-## Subtitle 3
-Amet dolore quos ipsam odit exercitationem, maiores Amet iure ipsa deserunt similique alias dolore Dolor repellat quos laboriosam earum temporibus? Veniam eum corporis exercitationem inventore eveniet? Ex at commodi odit porro optio Ab enim voluptatibus porro vitae culpa atque Laborum
+<dynamic-image filename="expertcasting/homepage.png"></dynamic-image>
+<dynamic-image filename="expertcasting/center.png"></dynamic-image>
+<dynamic-image filename="expertcasting/internal.png"></dynamic-image>
 
+I wanted a minimilist, kind of metallic look to the site, and I think I achieved that with the background image and font color/weight.

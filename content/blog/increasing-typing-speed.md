@@ -1,5 +1,5 @@
 ---
-title: Get Your Typing Speed Up
+title: Increasing Your Typing Speed
 
 description: How I got my typing speed above 100 WPM
 
@@ -9,7 +9,7 @@ categories:
 - Vanilla Javascript
 ---
 
-# Get Your Typing Speed Up
+# Increasing Your Typing Speed
 
 I've been on the keyboard most of my adult life, but it only recently occurred to me that I may not be typing efficiently or to my fullest potential.
 
@@ -26,12 +26,12 @@ I want to stress here that maintaining the proper position will be absolutely es
 
 ## Accuracy Vs Speed
 
-So you might be tempted in the beginning to just start moving your fingers fast, thinking that it might help you increase your speed. On the contrary if you spell a word word, that means that not only did you waste time typing that string of letters, you now have to spend time deleting those letters and then redoing it. It probably would have been faster if you had slowed down and typed it correct the first time.
+So you might be tempted in the beginning to just start moving your fingers fast, thinking that it might help you increase your speed. On the contrary if you spell a word wrong, that means that not only did you waste time typing those string of letters, you now have to spend time deleting those letters and then redoing it. It probably would have been faster if you had slowed down and typed it correctly the first time.
 
-This is the argument to, in the beginning, start slow. Focus on accuracy over speed. As you becoming familiar with the letters and they position, how your hands work, you will instinctively be able to increase your speed.
+So, start slow. Focus on accuracy over speed. You will instinctively become faster as you get more accustomed to the keys and your finger position.
 
 ## Pinky Finger
-So you have to learn how to work with all of your fingers. That means those awkward movements with your pinky. If a key should be pressed with your pinky, and it feels awkward or frustrating, **force** yourself to use the pink. Eventually, it will becoming habitual. But getting through those uncomfortable situations is key to progressing.
+So you have to learn how to work with all of your fingers. That means those awkward movements with your pinky. If a key should be pressed with your pinky, and it feels awkward or frustrating, **force** yourself to use the pinky. Eventually, it will becoming habitual. But getting through those uncomfortable situations is key to progressing.
 
 ## Practice
 
@@ -42,4 +42,6 @@ There is a great site site to practice called **<a href="https://www.10fastfinge
 
 I am a coder, and I do a lot of typing in text editors. As a matter of fact, this article was written in VIM. VIM has become my favorite editor and I have tried to get its keybindings in all facets of my life. VIM is, after all, life. The gist of VIM is, in my opinion, to keep your fingers in the home row as much as possible. Cursor movements, correcting words, finding words can all be done from the home row. So you don't have to awkwardly reach for the mouse, or the arrow keys. Everything is at your finger tips (most) of the time.
 
-I understand not all environments will allow for VIM, but if you can learn it, master it, you will **enjoy** typing. I guarantee it!
+There is even a browser plugin for Chrome and Firfox called Vimium that has enhanced by browsing speed.
+
+VIM may not be usable in all environments, where it can be applied, it will be extremely beneficial.
