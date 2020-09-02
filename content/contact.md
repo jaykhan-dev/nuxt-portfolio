@@ -1,12 +1,6 @@
-<h1 class="display-3 mb-4">Contact Us</h1>
+# Contact Us
 
-## Telephone
-<h3 class="red--text">
-  613-296-2462
-</h3>
+Get in touch, let me know how I can be of service.
 
-## Location
-- The beautiful city of Ottawa
-
-## Rates
-- Its a free for all! I don't charge for my services cuz I suck and can't!
+## Form
+<contact-form />

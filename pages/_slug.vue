@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Stuff and shit</h1>
     <nuxt-content :document="doc" />
   </div>
 </template>
