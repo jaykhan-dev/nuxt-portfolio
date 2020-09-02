@@ -9,7 +9,8 @@
         v-for="(location, index) in locations"
         :key="index"
         :to="location.link"
-        class="mx-2 red hidden-sm-and-down"
+        class="mx-2 hidden-sm-and-down"
+        outlined
         >{{ location.name }}</v-btn
       >
     </v-toolbar>
