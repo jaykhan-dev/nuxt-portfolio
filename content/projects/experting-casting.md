@@ -12,8 +12,10 @@ I ended up picking up a Wordpress course on Udemy and that really opened up my e
 
 I've learnt a lot about web develoment since, but this site is near and dear to my heart because it really put me on the digital map as a creator and developer.
 
+### Images
 <dynamic-image filename="expertcasting/homepage.png"></dynamic-image>
 <dynamic-image filename="expertcasting/center.png"></dynamic-image>
 <dynamic-image filename="expertcasting/internal.png"></dynamic-image>
 
+### Vision
 I wanted a minimilist, kind of metallic look to the site, and I think I achieved that with the background image and font color/weight.
