@@ -28,6 +28,9 @@
             <v-textarea outlined name="message" label="Message"></v-textarea>
           </v-col>
         </v-row>
+        <v-row>
+          <v-btn type="submit" class="ml-auto primary">Submit</v-btn>
+        </v-row>
       </v-container>
     </form>
   </div>
