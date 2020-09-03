@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row>
-      <v-col class="ml-auto" cols="6" md="6" lg="3">
+      <v-col class="ml-auto" cols="12" sm="6" md="6" lg="3">
         <v-text-field v-model="searchQuery" label="Search"></v-text-field>
       </v-col>
     </v-row>

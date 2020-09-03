@@ -2,21 +2,52 @@
   <div>
     <v-toolbar fixed>
       <v-toolbar-title>
-        <nuxt-link to="/" class="white--text font-weight-thin"
-          >Riza Khan</nuxt-link
-        >
+        <v-row>
+          <v-col>
+            <nuxt-link to="/" class="white--text">Riza Khan</nuxt-link>
+          </v-col>
+          <v-col class="hidden-sm-and-down">
+            <span>|</span>
+          </v-col>
+          <v-col class="hidden-sm-and-down">
+            <span>Web Developer</span>
+          </v-col>
+        </v-row>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
         v-for="(location, index) in locations"
         :key="index"
         :to="location.link"
-        class="mx-2 hidden-sm-and-down font-weight-thin"
-        outlined
+        class="mx-2 white black--text hidden-sm-and-down"
         tile
         >{{ location.name }}</v-btn
       >
+      <v-app-bar-nav-icon
+        class="hidden-md-and-up"
+        @click="drawer = !drawer"
+      ></v-app-bar-nav-icon>
     </v-toolbar>
+    <v-navigation-drawer v-model="drawer" absolute temporary>
+      <v-list-item>
+        <v-col>
+          <v-list-item-content
+            ><p class="text-center">Riza Khan</p></v-list-item-content
+          >
+          <v-list-item-content class="ma-0"
+            ><p class="text-center ma-0">Web Developer</p></v-list-item-content
+          >
+        </v-col>
+      </v-list-item>
+      <v-divider></v-divider>
+      <v-list-item
+        v-for="(location, index) in locations"
+        :key="index"
+        link
+        :to="location.link"
+        >{{ location.name }}</v-list-item
+      >
+    </v-navigation-drawer>
   </div>
 </template>
 
@@ -24,6 +55,7 @@
 export default {
   data() {
     return {
+      drawer: false,
       locations: [
         { name: 'Services', link: '/services' },
         { name: 'Past Projects', link: '/projects' },
