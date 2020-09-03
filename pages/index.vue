@@ -5,18 +5,37 @@
         <h1 class="display-4 white--text">Riza Khan</h1>
         <p class="subtitle-1 pl-2">Web Developer</p>
         <v-row class="pl-4">
-          <v-btn outlined class="mt-4" @click="goToLocation('/services')"
+          <v-btn
+            outlined
+            tile
+            class="mt-4 white black--text"
+            @click="goToLocation('/services')"
             >Services</v-btn
           >
         </v-row>
         <v-row class="pl-4">
-          <v-btn outlined class="mt-4" @click="goToLocation('/projects')"
+          <v-btn
+            outlined
+            tile
+            class="mt-4 white black--text"
+            @click="goToLocation('/projects')"
             >Past Projects</v-btn
           >
         </v-row>
         <v-row class="pl-4">
-          <v-btn outlined class="mt-4" @click="goToLocation('/blog')"
+          <v-btn
+            tile
+            class="white mt-4 black--text"
+            @click="goToLocation('/blog')"
             >Blog</v-btn
+          >
+        </v-row>
+        <v-row class="pl-4">
+          <v-btn
+            tile
+            class="white mt-4 black--text"
+            @click="goToLocation('/contact')"
+            >Contact</v-btn
           >
         </v-row>
       </v-col>
