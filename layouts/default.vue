@@ -7,7 +7,7 @@
       </v-container>
     </v-main>
     <v-footer :absolute="!fixed" app>
-      <span class="mx-auto font-weight-thin"
+      <span class="mx-auto"
         >Riza Khan &copy; {{ new Date().getFullYear() }}</span
       >
     </v-footer>
