@@ -1,9 +1,9 @@
 <template>
   <div>
     <form
-      action="/"
+      action="/success"
       name="contact"
-      method="post"
+      method="POST"
       netlify
       netlify-honeypot="bot-field"
     >
@@ -14,12 +14,14 @@
               name="name"
               label="First Name"
               class="pa-0 ma-0"
+              type="text"
               required
               outlined
             ></v-text-field>
             <v-text-field
               name="email"
               label="E-mail"
+              type="email"
               required
               outlined
             ></v-text-field>
