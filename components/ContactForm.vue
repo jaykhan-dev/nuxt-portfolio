@@ -1,12 +1,6 @@
 <template>
   <div>
-    <form
-      action="/success"
-      name="contact"
-      method="POST"
-      netlify
-      netlify-honeypot="bot-field"
-    >
+    <form action="/success" name="contact" method="POST" data-netlify="true">
       <v-container>
         <v-row>
           <v-col cols="12" md="6">
