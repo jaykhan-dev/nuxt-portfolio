@@ -7,22 +7,15 @@
             type="text"
             name="name"
             label="Full Name"
-            required
             oulined
           ></v-text-field>
           <v-text-field
             type="email"
             name="email"
             label="Email"
-            required
             oulined
           ></v-text-field>
-          <v-textarea
-            name="message"
-            label="Message"
-            outlined
-            required
-          ></v-textarea>
+          <v-textarea name="message" label="Message" outlined></v-textarea>
           <v-row>
             <v-btn type="submit" class="primary ml-auto mr-3" tile>Send</v-btn>
           </v-row>
