@@ -1,6 +1,17 @@
 <template>
   <v-container>
     <v-row>
+      <v-col>
+        <p>
+          If you can use me in any of these services please don't hesitate to
+          <NuxtLink to="/contact"
+            ><v-btn tile class="primary">Contact</v-btn></NuxtLink
+          >
+          me
+        </p>
+      </v-col>
+    </v-row>
+    <v-row>
       <v-col
         v-for="(service, index) in services"
         :key="index"
@@ -14,6 +25,9 @@
           >
             <v-card :class="{ grow: hover }" class="mx-auto" max-width="600">
               <v-card-title class="text-h5">{{ service.title }}</v-card-title>
+              <v-card-title class="display-2 orange--text"
+                >{{ service.rate }}/hr</v-card-title
+              >
               <v-card-text class="text--primary">
                 <p>{{ service.description }}</p>
               </v-card-text>
@@ -29,7 +43,7 @@
 export default {
   async asyncData({ $content, params }) {
     const services = await $content('services', params.slug)
-      .only(['title', 'slug', 'description'])
+      .only(['title', 'slug', 'description', 'rate'])
       .fetch()
 
     return { services }

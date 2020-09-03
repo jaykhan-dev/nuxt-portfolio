@@ -1,8 +1,7 @@
 ---
-title: Development
-description: Some description
+title: Web Development
+description: Development with
+rate: $30
 ---
 
 # Development
-
-This is the development service description
