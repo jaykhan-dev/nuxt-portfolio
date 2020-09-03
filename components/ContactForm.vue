@@ -11,8 +11,8 @@
         <v-row>
           <v-col cols="12" md="6">
             <v-text-field
-              name="name"
-              label="First Name"
+              name="fullname"
+              label="Full Name"
               class="pa-0 ma-0"
               type="text"
               required
