@@ -2,12 +2,11 @@
   <div>
     <v-container>
       <v-row>
-        <v-col cols="12" lg="6" offset-lg="4">
+        <v-col cols="12" lg="6" offset-lg="2">
           <form
             name="contact"
             method="POST"
             data-netlify="true"
-            action="/success"
           >
             <v-text-field
               type="text"
@@ -22,7 +21,11 @@
               oulined
             ></v-text-field>
             <v-textarea name="message" label="Message" outlined></v-textarea>
-            <v-btn type="submit" class="primary">Send</v-btn>
+            <v-row>
+              <v-btn type="submit" class="primary ml-auto mr-3" tile
+                >Send</v-btn
+              >
+            </v-row>
           </form>
         </v-col>
       </v-row>
