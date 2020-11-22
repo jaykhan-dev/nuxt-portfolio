@@ -29,13 +29,11 @@ Its widely used for (but not limited to):
 
 There is plenty of code snippets to start you off on their **<a href="https://github.com/puppeteer/puppeteer" target="_blank">Github</a>** page. Here we will go over the environment you would want to start building in.
 
-I really suggest copying those code snippets verbatim and making sure they work on your environment. If they do not, you will need to make adjustments. For example, although I have a Windows machine, I do most of my development in the WSL2 Linux Subset, its Basically Linux inside Windows. But, there were issues getting dependencies to work on this system, therefore I switched all of my Pupppeteer work onto windows. That maybe something you will have to do in order to start working.
+I really suggest copying those code snippets verbatim and making sure they work on your environment. If they do not, you will need to make adjustments. For example, although I have a Windows machine, I do most of my development in the WSL2 Linux Subset, its basically Linux inside Windows. But, there were issues getting dependencies to work on this system, therefore I switched all of my Pupppeteer work onto Windows. That maybe something you will have to do in order to start working.
 
 ## The future
 
-As you go over the code snippets, you will notice that the possibilities are quite extraordinary. You are using a browser (in all the ways a real user can) via a JS script. The ability to automate tedious tasks,
-
-A Youtube video showed an example where a user created a script that would perform a tedious task simply via a puppeteer script.
+As you go over the code snippets, you will notice that the possibilities are quite extraordinary. You are using a browser (in all the ways a real user can) via a JS script. The ability to automate tedious tasks and retrieve information from websites that don't have their own API's.
 
 ## Continuing to Advance with Puppeteer
 
