@@ -6,7 +6,7 @@ description: The 101 of Puppeteer and what it is all about?
 previewImage: generic/puppetlogo.png
 
 categories:
-- Puppeteer
+  - Puppeteer
 ---
 
 # Puppeteer JS
@@ -14,6 +14,7 @@ categories:
 A browser that can be controlled by a Javascript script. Write your code in Node JS and utilize its API to perform a wide range of tasks.
 
 Its widely used for (but not limited to):
+
 1. Automation
 2. Data Scrapping
 3. End-to-End Testing
@@ -31,6 +32,7 @@ There is plenty of code snippets to start you off on their **<a href="https://gi
 I really suggest copying those code snippets verbatim and making sure they work on your environment. If they do not, you will need to make adjustments. For example, although I have a Windows machine, I do most of my development in the WSL2 Linux Subset, its Basically Linux inside Windows. But, there were issues getting dependencies to work on this system, therefore I switched all of my Pupppeteer work onto windows. That maybe something you will have to do in order to start working.
 
 ## The future
+
 As you go over the code snippets, you will notice that the possibilities are quite extraordinary. You are using a browser (in all the ways a real user can) via a JS script. The ability to automate tedious tasks,
 
 A Youtube video showed an example where a user created a script that would perform a tedious task simply via a puppeteer script.

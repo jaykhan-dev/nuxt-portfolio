@@ -9,15 +9,6 @@
             outlined
             tile
             class="mt-4 white black--text"
-            @click="goToLocation('/services')"
-            >Services</v-btn
-          >
-        </v-row>
-        <v-row class="pl-4">
-          <v-btn
-            outlined
-            tile
-            class="mt-4 white black--text"
             @click="goToLocation('/projects')"
             >Past Projects</v-btn
           >

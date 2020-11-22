@@ -89,5 +89,4 @@ sw.*
 # Vim swap files
 *.swp
 
-# Vim Session file
-Session.vim
+.undodir

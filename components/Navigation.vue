@@ -57,7 +57,6 @@ export default {
     return {
       drawer: false,
       locations: [
-        { name: 'Services', link: '/services' },
         { name: 'Past Projects', link: '/projects' },
         { name: 'Contact', link: '/contact' },
         { name: 'Blog', link: '/blog' },
