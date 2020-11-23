@@ -6,24 +6,24 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col
-        v-for="(blog, index) in filteredBlogs"
-        :key="index"
-        cols="12"
-        md="6"
-        lg="4"
-      >
+      <v-col v-for="(blog, index) in filteredBlogs" :key="index" cols="12">
         <v-hover v-slot:default="{ hover }">
           <NuxtLink :to="{ name: 'blog-slug', params: { slug: blog.slug } }">
-            <v-card :class="{ grow: hover }" class="mx-auto" max-width="600">
-              <dynamic-image :filename="blog.previewImage"></dynamic-image>
-              <v-card-title class="text-h5">{{ blog.title }}</v-card-title>
-              <v-card-subtitle class="pb-0 mb-4 overline">{{
-                formatDate(blog.updatedAt)
-              }}</v-card-subtitle>
-              <v-card-text class="text--primary">
-                <p>{{ blog.description }}</p>
-              </v-card-text>
+            <v-card :class="{ grow: hover }" class="mx-auto">
+              <v-row>
+                <v-col cols="2" class="image-container">
+                  <dynamic-image :filename="blog.previewImage"></dynamic-image>
+                </v-col>
+                <v-col>
+                  <v-card-title class="text-h5">{{ blog.title }}</v-card-title>
+                  <v-card-subtitle class="pb-0 mb-4 overline">{{
+                    formatDate(blog.updatedAt)
+                  }}</v-card-subtitle>
+                  <v-card-text class="text--primary">
+                    <p>{{ blog.description }}</p>
+                  </v-card-text>
+                </v-col>
+              </v-row>
             </v-card>
           </NuxtLink>
         </v-hover>
@@ -81,5 +81,9 @@ a {
 
 .v-card {
   transition: all 0.5s ease;
+}
+
+.image-container {
+  margin: auto;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-0" max-width="800" tile>
+  <v-card class="mx-0 sticky" max-width="800" tile>
     <v-list nav dense>
       <v-subheader>Table Of Contents</v-subheader>
       <v-list-item-group v-if="toc" color="primary">
@@ -32,5 +32,12 @@ export default {
 a {
   text-decoration: none;
   color: white;
+}
+
+.sticky {
+  @media (min-width: 1264px) {
+    position: fixed;
+    max-width: 300px;
+  }
 }
 </style>

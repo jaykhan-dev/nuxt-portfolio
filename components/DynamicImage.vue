@@ -3,8 +3,9 @@
     <v-img
       :src="dynamicImage"
       class="mx-auto"
-      max-height="600"
+      max-height="200"
       loading="lazy"
+      contain
     />
     <p class="my-4 text-center subtitle-1">
       {{ caption }}
