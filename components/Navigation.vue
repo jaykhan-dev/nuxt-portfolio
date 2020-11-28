@@ -4,13 +4,13 @@
       <v-toolbar-title>
         <v-row>
           <v-col>
-            <nuxt-link to="/" class="white--text">Riza Khan</nuxt-link>
+            <nuxt-link to="/" class="white--text">Jawad Khan</nuxt-link>
           </v-col>
           <v-col class="hidden-sm-and-down">
             <span>|</span>
           </v-col>
           <v-col class="hidden-sm-and-down">
-            <span>Web Developer</span>
+            <span>UI/UX Developer</span>
           </v-col>
         </v-row>
       </v-toolbar-title>
@@ -32,10 +32,12 @@
       <v-list-item>
         <v-col>
           <v-list-item-content
-            ><p class="text-center">Riza Khan</p></v-list-item-content
+            ><p class="text-center">Jawad Khan</p></v-list-item-content
           >
           <v-list-item-content class="ma-0"
-            ><p class="text-center ma-0">Web Developer</p></v-list-item-content
+            ><p class="text-center ma-0">
+              UI/UX Developer
+            </p></v-list-item-content
           >
         </v-col>
       </v-list-item>
@@ -59,7 +61,6 @@ export default {
       locations: [
         { name: 'Past Projects', link: '/projects' },
         { name: 'Contact', link: '/contact' },
-        { name: 'Blog', link: '/blog' },
       ],
     }
   },

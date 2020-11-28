@@ -8,7 +8,7 @@
     </v-main>
     <v-footer :absolute="!fixed" app>
       <span class="mx-auto"
-        >Riza Khan &copy; {{ new Date().getFullYear() }}</span
+        >Jawad Khan &copy; {{ new Date().getFullYear() }}</span
       >
     </v-footer>
   </v-app>
