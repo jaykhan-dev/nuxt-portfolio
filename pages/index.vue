@@ -2,8 +2,8 @@
   <v-container fill-height>
     <v-row>
       <v-col cols="12" md="6" offset-md="2" lg="3" offset-lg="3">
-        <h1 class="display-4 white--text">Riza Khan</h1>
-        <p class="subtitle-1 pl-2">Web Developer</p>
+        <h1 class="display-4 white--text">Jawad Khan</h1>
+        <p class="subtitle-1 pl-2">UI/UX Developer</p>
         <v-row class="pl-4">
           <v-btn
             outlined
@@ -11,14 +11,6 @@
             class="mt-4 white black--text"
             @click="goToLocation('/projects')"
             >Past Projects</v-btn
-          >
-        </v-row>
-        <v-row class="pl-4">
-          <v-btn
-            tile
-            class="white mt-4 black--text"
-            @click="goToLocation('/blog')"
-            >Blog</v-btn
           >
         </v-row>
         <v-row class="pl-4">
