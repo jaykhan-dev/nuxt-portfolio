@@ -11,7 +11,7 @@
           <NuxtLink :to="{ name: 'blog-slug', params: { slug: blog.slug } }">
             <v-card :class="{ grow: hover }" class="mx-auto">
               <v-row>
-                <v-col cols="2" class="image-container">
+                <v-col cols="12" md="2" class="image-container">
                   <dynamic-image :filename="blog.previewImage"></dynamic-image>
                 </v-col>
                 <v-col>

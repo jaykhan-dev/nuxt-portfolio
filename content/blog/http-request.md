@@ -3,7 +3,7 @@ title: Sending Javascript with HTTP POST Request
 
 description: Have you ever wanted to send a script with your POST request?
 
-previewImage:
+previewImage: generic/code.jpg
 
 categories:
 - HTTP
@@ -21,5 +21,3 @@ There are many different types of requests you can make in your HTTP request.
 `PUT` : Similar to POST.
 
 `PATCH` : Similar To PUT with some nuanced differences. Say you want to 'update' some information, you would use this.
-
-
