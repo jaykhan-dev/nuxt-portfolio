@@ -13,11 +13,12 @@ categories:
 
 ## Syntax Changes
 
-Going from Vue2 to Vue3, there are some syntaxical changes:
+Going from Vue2 to Vue3, there are some syntactical changes:
 
 In Vue2
 
 ```javascript
+// main.js
 import Vue from 'vue'
 import Vuex from 'vuex'
 
@@ -73,7 +74,10 @@ import { createStore } from 'vuex'
 import users from './modules/users'
 
 const store = createStore({
-  users,
+  modules: {
+    user,
+    anotherModule
+  }
 })
 
 export default store
