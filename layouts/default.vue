@@ -6,7 +6,7 @@
         <nuxt />
       </v-container>
     </v-main>
-    <v-footer :absolute="!fixed" app>
+    <v-footer>
       <span class="mx-auto"
         >Riza Khan &copy; {{ new Date().getFullYear() }}</span
       >
