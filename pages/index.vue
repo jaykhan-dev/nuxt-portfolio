@@ -5,19 +5,15 @@
         <h1 class="display-4 white--text">Riza Khan</h1>
         <p class="subtitle-1 pl-2">Web Developer</p>
         <v-row class="pl-4">
-          <nuxt-link outlined tile class="btn mt-4 black--text" to="/projects"
+          <nuxt-link outlined tile class="btn mt-4" to="/projects"
             >Past Projects</nuxt-link
           >
         </v-row>
         <v-row class="pl-4">
-          <nuxt-link tile class="btn mt-4 black--text" to="/blog"
-            >Blog</nuxt-link
-          >
+          <nuxt-link tile class="btn mt-4" to="/blog">Blog</nuxt-link>
         </v-row>
         <v-row class="pl-4">
-          <nuxt-link tile class="btn mt-4 black--text" to="/contact"
-            >Contact</nuxt-link
-          >
+          <nuxt-link tile class="btn mt-4" to="/contact">Contact</nuxt-link>
         </v-row>
       </v-col>
     </v-row>
@@ -63,10 +59,11 @@ export default {
   padding: 0.5rem 1rem;
   text-decoration: none;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
   background: gray;
   transition: all 0.5s ease;
+  color: white;
 
   &:hover {
     background: white;

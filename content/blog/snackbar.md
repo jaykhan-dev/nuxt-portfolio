@@ -187,7 +187,7 @@ return {
 }
 ```
 
-So to re-iterate, we want the message to show up, and after a few seconds disappear. We can achieve this by some kind of delay. In our case, we will use `promise`'s to achiev this
+So to re-iterate, we want the message to show up, and after a few seconds disappear. We can achieve this by some kind of delay. In our case, we will use `promise`'s to achieve this
 
 But before we get into that, we need to understanding something about Components and their life cycle.
 
@@ -237,4 +237,3 @@ There are a couple of things that would enchance this component though:
 1. Adding CSS transitions
 2. Adding CSS transitions between the test changes
 3. Adding background colors that will enhance the message presented. Perhaps a red color for danger/error.
-
