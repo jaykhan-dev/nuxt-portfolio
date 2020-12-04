@@ -11,7 +11,7 @@
         :key="index"
         cols="12"
         md="6"
-        ><NuxtLink class="btn" :to="blog.path">
+        ><NuxtLink :to="{ name: 'blog-slug', params: { slug: blog.slug } }">
           <v-flex xs12>
             <v-card color="grey darken-2" class="white--text">
               <v-card-title primary-title>
