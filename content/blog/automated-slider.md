@@ -6,7 +6,9 @@ description: How to build an automated slider using vanilla Javascript
 previewImage: slider/slider.png
 
 categories:
-- Vanilla Javascript
+  - Vanilla Javascript
+
+published: true
 ---
 
 # Automated Slider
@@ -22,6 +24,7 @@ This is what we will build (sorry for the jumpy gif):
 Here, we have three 'cards' that show on `slide-container` at one time. Part of the feature in the slider is the ability to change the number of images shown. We can change it to just one, or three or a hundred (for arguments sake).
 
 ## HTML
+
 Here is the minimum HTML you will need:
 
 ```html
@@ -32,6 +35,7 @@ Here is the minimum HTML you will need:
 
 Believe it or not, that is all you need. There are additional components we can add (ie, navigation buttons), but we won't worry about that complexity for the time being.
 <img src="~/assets/images/slider.png">
+
 ## CSS
 
 Since this is an example, we will try to keep the CSS to a minimum. All that matters right now is that the `.slide-container` is centered on the screen. The internal `slides` will dynamically conform to the size of their container depending on a few criterias that we will get to in the Javascript.
@@ -47,7 +51,7 @@ body {
   width: 600px;
   height: 300px;
   border: solid 1px black;
-  border-radius:10px;
+  border-radius: 10px;
   display: flex; /* This will put the slides next to each other */
   overflow: hidden; /* This rule is disabled in the codepen and once you read through the article you will find out why. */
 }
@@ -55,7 +59,7 @@ body {
 .slide {
   height: 100%;
   border: solid 1px red;
-  transition: all .5s ease; /* This is important to display a smooth transition vs a quick jump of the slides */
+  transition: all 0.5s ease; /* This is important to display a smooth transition vs a quick jump of the slides */
   position: absolute; /* This is critical! The animation will not work without it. CSS properties like left, right, top, bottom only work with elements with this property */
 }
 ```
@@ -77,11 +81,12 @@ const data = [
 ```
 
 ### Slider Variables
+
 Lets setup all the variables needed for this animation:
 
 ```javascript
 const sliderContainer = document.querySelector('.slide-container') // select the slider div
-const slidesInContainer = 3; // how many slides do you want to show in the slide container at one time?
+const slidesInContainer = 3 // how many slides do you want to show in the slide container at one time?
 const timer = 3000 // seconds between the slider animation
 const slideWidth = sliderContainer.offsetWidth / slidesInContainer // determine the width of each slide depending on the width of the sliderContainer
 ```
@@ -89,7 +94,6 @@ const slideWidth = sliderContainer.offsetWidth / slidesInContainer // determine 
 ### Setting Up `SlideContainer`
 
 Let us add the internal cuts of the `slideContainer`. We want to create a `for` loop that will allow us add the number of slides we want to add to the container. Hint, the `slidesInContainer` variable above.
-
 
 ```javascript
 for (let x = 0; x < slidesInContainer; x++) {
@@ -103,6 +107,7 @@ for (let x = 0; x < slidesInContainer; x++) {
 ```
 
 If you inspect the HTML in the browser, you will see something like this:
+
 ```html
 <div class="slide-container">
   <div class="slide"></div>
@@ -110,6 +115,7 @@ If you inspect the HTML in the browser, you will see something like this:
   <div class="slide"></div>
 </div>
 ```
+
 We wanted to see three slides, and there they are!
 
 ### Setting Up Each Individual Slide
@@ -128,6 +134,7 @@ function setupSlide(element, dataPosition) {
   element.appendChild(number)
 }
 ```
+
 Basically, creates a `h3` and `p` element and addes the informatoin from the `data` array above.
 
 ### Slider Animation
@@ -149,10 +156,12 @@ Lets illustrate the above in the markup below:
 
 ```html
 <div class="slide-container">
-  <div class="slide"></div> <!-- this would be the newly appended div, and add contents of data[4] to it BEFORE the animation is started -->
+  <div class="slide"></div>
+  <!-- this would be the newly appended div, and add contents of data[4] to it BEFORE the animation is started -->
   <div class="slide"></div>
   <div class="slide"></div>
-  <div class="slide"></div> <!-- this div gets deleted after the animation is complete -->
+  <div class="slide"></div>
+  <!-- this div gets deleted after the animation is complete -->
 </div>
 ```
 
@@ -174,19 +183,21 @@ function createSlide(parentElement) {
 }
 ```
 
-Just to recap, we created a slide and then we added it to the DOM via the `insertAdjacentElement` method, *but positioned it outside the element, where `overflow: none;` will hide it from view*. We then used the `setupSlide` method we wrote above to add the contents from the `data` array to it. We are ready to tackle steps **3** and **4**.
+Just to recap, we created a slide and then we added it to the DOM via the `insertAdjacentElement` method, _but positioned it outside the element, where `overflow: none;` will hide it from view_. We then used the `setupSlide` method we wrote above to add the contents from the `data` array to it. We are ready to tackle steps **3** and **4**.
 
 But a very important element of this is the `setTimeout` method we are using to prevent that `move` function from running to fast. This is how we achieve that smooth transition from slide to slide.
 
 ```javascript
 function move() {
   let slides = document.querySelectorAll('.slide')
-  slides.forEach(slide => {
-    slide.style.left  = `${parseInt(slide.style.left.split('px')[0]) + slideWidth}px`
+  slides.forEach((slide) => {
+    slide.style.left = `${
+      parseInt(slide.style.left.split('px')[0]) + slideWidth
+    }px`
   })
 
   setTimeout(() => {
-  slides[slides.length - 1].remove()
+    slides[slides.length - 1].remove()
   }, 500)
 }
 ```

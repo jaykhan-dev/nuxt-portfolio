@@ -73,13 +73,11 @@ const router = createRouter({
 
 ```
 
-Thats about all the routes the visitor is should see. However as a create and contributor to the site, we need to create/update/read/delete (CURD) new blogs.o
+Thats about all the routes the visitor is should see. However as a create and contributor to the site, we need to create/update/read/delete (CURD) new blogs.
 
 That begs the question under which route should those events take place?
 
-Creating and editing are about the same funtionality in my opinion, the only difference being that in the former you have no content to edit but would use the same form as while editing. Reading and Deleting and requests to the server so we don't really need to worry about those.
-
-So think about the workflow, you visit a blog to 'read' it and you vist a blog to 'edit' it. Should that use the same component? I think we can use the same route to do all three.
+Creating and editing are about the same funtionality in my opinion, the only difference being that in the former you have no content to edit but would use the same form as while editing. Reading and Deleting and requests to the server so we don't really need to worry about those. So think about the workflow, you visit a blog to 'read' it and you vist a blog to 'edit' it. Should that use the same component? I think we can use the same route to do all three.
 
 So perhaps it could look something like this:
 
@@ -98,5 +96,16 @@ So perhaps it could look something like this:
 
 You will notice, we are using the same component. Only our endpoint is different, which will trigger different components to render.
 
-How exactly do we do this? We can use `route.params`....
+/// Correct this
+How exactly do we do this? We can use `route.params`.
+
+But as a creator, you'll need an admin location where you can trigger the status of blogs on or off:
+
+```javascript
+  {
+    path: "/dashboard",
+    name: "Dashboard",
+    component: Dashboard
+  }
+```
 

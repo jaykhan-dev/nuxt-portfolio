@@ -7,6 +7,8 @@ previewImage: generic/code.jpg
 
 categories:
   - Javascript
+
+published: true
 ---
 
 # Sorting

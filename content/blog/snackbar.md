@@ -7,6 +7,8 @@ previewImage: generic/vuejslogo.jpg
 
 categories:
   - VueJS
+
+published: true
 ---
 
 # Vue 3 Snackbar component
@@ -197,8 +199,6 @@ This is fine because it is very light weight and doesn't handle a lot of data or
 We then need to know that the `setup()` method in the Composition API is called at the `beforeCreate` and `created` Options API methods would have been called.
 
 The reason I emphasis this is because once the getter returns the value from the store, it will not automatically start the timer. We need to create and call such a function.
-
-
 
 ```javascript
 // Call the function

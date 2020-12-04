@@ -6,7 +6,9 @@ description: How I got my typing speed above 100 WPM
 previewImage: generic/code.jpg
 
 categories:
-- Vanilla Javascript
+  - Vanilla Javascript
+
+published: true
 ---
 
 # Increasing Your Typing Speed
@@ -18,6 +20,7 @@ I realized this when I tried the typing tests online (do a quick Google search) 
 Therefore, I decided to deliberately get better at typing.
 
 ## Hand position
+
 I know that those nipples on the F and J key meant something, but I never asked why. I decided to take a free online typing course where they showed how to position your hand on the keyboard. There is a home row and rows below it and above it. Keeping your fingers closer to home row allows you to be more efficient in your movements.
 
 Specifically, keep your index fingers placed on the F and J keys at idle. That way, you will know where and how far you will need to move your fingers to get to the next target key.
@@ -31,12 +34,12 @@ So you might be tempted in the beginning to just start moving your fingers fast,
 So, start slow. Focus on accuracy over speed. You will instinctively become faster as you get more accustomed to the keys and your finger position.
 
 ## Pinky Finger
+
 So you have to learn how to work with all of your fingers. That means those awkward movements with your pinky. If a key should be pressed with your pinky, and it feels awkward or frustrating, **force** yourself to use the pinky. Eventually, it will becoming habitual. But getting through those uncomfortable situations is key to progressing.
 
 ## Practice
 
 There is a great site site to practice called **<a href="https://www.10fastfingers.com" taget="_blank">10 Fast Fingers</a>** that has helped me assess my progress. It includes a quick 1 minute test, which I come back to a few times a day when I'm not doing anything and I just try to hit a high score.
-
 
 ## The Next Step
 

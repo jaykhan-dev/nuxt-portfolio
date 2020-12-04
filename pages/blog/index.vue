@@ -46,6 +46,7 @@ export default {
         'previewImage',
         'categories',
         'description',
+        'published',
       ])
       .sortBy('updatedAt', 'desc')
       .fetch()
@@ -59,8 +60,10 @@ export default {
   },
   computed: {
     filteredBlogs() {
-      return this.blogs.filter((blog) =>
-        blog.title.toLowerCase().includes(this.searchQuery.toLowerCase())
+      return this.blogs.filter(
+        (blog) =>
+          blog.title.toLowerCase().includes(this.searchQuery.toLowerCase()) &&
+          blog.published === true
       )
     },
   },
