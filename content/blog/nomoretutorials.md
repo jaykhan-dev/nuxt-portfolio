@@ -5,6 +5,8 @@ description: There will have to come a time where you will just have to stop wat
 
 previewImage: generic/code.jpg
 
+published: false
+
 categories:
 - Vanilla Javascript
 ---

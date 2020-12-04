@@ -5,6 +5,8 @@ description: Have you ever wanted to send a script with your POST request?
 
 previewImage: generic/code.jpg
 
+published: false
+
 categories:
 - HTTP
 - Javascript

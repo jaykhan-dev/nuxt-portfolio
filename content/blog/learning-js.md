@@ -5,6 +5,8 @@ description: Just going over my brief history with Javascript and where I am hop
 
 previewImage: generic/code.jpg
 
+published: true
+
 categories:
 - Vanilla Javascript
 ---

@@ -5,6 +5,8 @@ description: The 101 of Puppeteer and what it is all about?
 
 previewImage: generic/puppetlogo.png
 
+published: false
+
 categories:
   - Puppeteer
 ---

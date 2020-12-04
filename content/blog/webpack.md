@@ -5,6 +5,8 @@ description: An absolutely essential tool to know as a Frontend Developer. Autom
 
 previewImage: generic/code.jpg
 
+published: false
+
 categories:
 - Vanilla Javascript
 ---

@@ -7,6 +7,8 @@ previewImage: generic/puppetlogo.png
 
 categories:
   - Javascript
+
+published: false
 ---
 
 # Getting Better

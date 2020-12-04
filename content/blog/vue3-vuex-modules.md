@@ -5,6 +5,8 @@ description: How to separate your modules in Vue 3
 
 previewImage: generic/vuejslogo.jpg
 
+published: true
+
 categories:
   - VueJS
 ---

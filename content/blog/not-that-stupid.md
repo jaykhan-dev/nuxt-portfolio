@@ -5,6 +5,8 @@ description: If you put your mind to it, you can achieve it. Showing up is most 
 
 previewImage: generic/code.jpg
 
+published: false
+
 categories:
   - Life
   - Programming
