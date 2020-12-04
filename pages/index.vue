@@ -67,6 +67,7 @@ export default {
 
   &:hover {
     background: white;
+    color: black;
   }
 }
 </style>

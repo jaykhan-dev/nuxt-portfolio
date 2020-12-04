@@ -17,8 +17,11 @@ export default {
   components: {
     TableOfContents,
   },
-  async asyncData({ $content, params }) {
+  async asyncData({ $content, params, redirect }) {
     const doc = await $content('blog', params.slug).fetch()
+    if (!doc.published) {
+      redirect('/blog')
+    }
     return { doc }
   },
 }
