@@ -11,25 +11,24 @@
         :key="index"
         cols="12"
         md="6"
-      >
-        <v-flex xs12>
-          <v-card color="grey darken-2" class="white--text">
-            <v-card-title primary-title>
-              <div>
-                <div class="headline">{{ blog.title }}</div>
-                <span>
-                  <v-card-subtitle class="pb-0 mb-4 pl-0 overline">{{
-                    formatDate(blog.createdAt)
-                  }}</v-card-subtitle>
-                  {{ blog.description }}</span
-                >
-              </div>
-            </v-card-title>
-            <v-card-actions>
-              <v-btn dark :to="blog.path">Read More</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-flex>
+        ><NuxtLink class="btn" :to="blog.path">
+          <v-flex xs12>
+            <v-card color="grey darken-2" class="white--text">
+              <v-card-title primary-title>
+                <div>
+                  <div class="headline">{{ blog.title }}</div>
+                  <span>
+                    <v-card-subtitle class="pb-0 mb-4 pl-0 overline">{{
+                      formatDate(blog.createdAt)
+                    }}</v-card-subtitle>
+                    {{ blog.description }}</span
+                  >
+                </div>
+              </v-card-title>
+              <v-card-actions> </v-card-actions>
+            </v-card>
+          </v-flex>
+        </NuxtLink>
       </v-col>
     </v-row>
   </v-container>
