@@ -5,8 +5,6 @@ description: A couple of senarios of sorting in Javascript
 
 previewImage: generic/code.jpg
 
-published: true
-
 categories:
   - Javascript
 
