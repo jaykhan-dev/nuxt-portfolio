@@ -12,22 +12,13 @@
         cols="12"
         md="6"
         ><NuxtLink :to="{ name: 'blog-slug', params: { slug: blog.slug } }">
-          <v-flex xs12>
-            <v-card color="grey darken-2" class="white--text">
-              <v-card-title primary-title>
-                <div>
-                  <div class="headline">{{ blog.title }}</div>
-                  <span>
-                    <v-card-subtitle class="pb-0 mb-4 pl-0 overline">{{
-                      formatDate(blog.createdAt)
-                    }}</v-card-subtitle>
-                    {{ blog.description }}</span
-                  >
-                </div>
-              </v-card-title>
-              <v-card-actions> </v-card-actions>
-            </v-card>
-          </v-flex>
+          <v-card :class="{ grow: hover }" class="mx-auto" max-width="600">
+            <dynamic-image :filename="blog.previewImage"></dynamic-image>
+            <v-card-title class="text-h5">{{ blog.title }}</v-card-title>
+            <v-card-text class="text--primary">
+              <p>{{ blog.description }}</p>
+            </v-card-text>
+          </v-card>
         </NuxtLink>
       </v-col>
     </v-row>
