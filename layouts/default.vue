@@ -2,7 +2,7 @@
   <v-app dark>
     <Navigation />
     <v-main>
-      <v-container>
+      <v-container class="mt-15">
         <nuxt />
       </v-container>
     </v-main>

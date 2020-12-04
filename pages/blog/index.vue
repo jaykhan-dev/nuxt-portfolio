@@ -6,27 +6,30 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col v-for="(blog, index) in filteredBlogs" :key="index" cols="12">
-        <v-hover v-slot:default="{ hover }">
-          <NuxtLink :to="{ name: 'blog-slug', params: { slug: blog.slug } }">
-            <v-card :class="{ grow: hover }" class="mx-auto">
-              <v-row>
-                <v-col cols="12" md="2" class="image-container">
-                  <dynamic-image :filename="blog.previewImage"></dynamic-image>
-                </v-col>
-                <v-col>
-                  <v-card-title class="text-h5">{{ blog.title }}</v-card-title>
-                  <v-card-subtitle class="pb-0 mb-4 overline">{{
-                    formatDate(blog.updatedAt)
+      <v-col
+        v-for="(blog, index) in filteredBlogs"
+        :key="index"
+        cols="12"
+        md="6"
+      >
+        <v-flex xs12>
+          <v-card color="grey darken-2" class="white--text">
+            <v-card-title primary-title>
+              <div>
+                <div class="headline">{{ blog.title }}</div>
+                <span>
+                  <v-card-subtitle class="pb-0 mb-4 pl-0 overline">{{
+                    formatDate(blog.createdAt)
                   }}</v-card-subtitle>
-                  <v-card-text class="text--primary">
-                    <p>{{ blog.description }}</p>
-                  </v-card-text>
-                </v-col>
-              </v-row>
-            </v-card>
-          </NuxtLink>
-        </v-hover>
+                  {{ blog.description }}</span
+                >
+              </div>
+            </v-card-title>
+            <v-card-actions>
+              <v-btn dark :to="blog.path">Read More</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-flex>
       </v-col>
     </v-row>
   </v-container>
@@ -38,7 +41,7 @@ export default {
     const blogs = await $content('blog', params.slug)
       .only([
         'title',
-        'updatedAt',
+        'createdAt',
         'slug',
         'previewImage',
         'categories',

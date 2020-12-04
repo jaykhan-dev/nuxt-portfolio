@@ -2,7 +2,7 @@
   <v-container>
     <v-row>
       <v-col cols="12" lg="3">
-        <TableOfContents :toc="doc.toc" />
+        <TableOfContents :toc="doc.toc" sticky="true" />
       </v-col>
       <v-col cols="12" lg="9">
         <nuxt-content :document="doc" />
@@ -23,3 +23,5 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped></style>

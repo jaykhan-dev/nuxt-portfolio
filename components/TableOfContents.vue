@@ -33,11 +33,4 @@ a {
   text-decoration: none;
   color: white;
 }
-
-.sticky {
-  @media (min-width: 1264px) {
-    position: fixed;
-    max-width: 300px;
-  }
-}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-toolbar fixed>
+    <v-app-bar fixed width="100%">
       <v-toolbar-title>
         <v-row>
           <v-col>
@@ -27,7 +27,7 @@
         class="hidden-md-and-up"
         @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
-    </v-toolbar>
+    </v-app-bar>
     <v-navigation-drawer v-model="drawer" absolute temporary>
       <v-list-item>
         <v-col>
