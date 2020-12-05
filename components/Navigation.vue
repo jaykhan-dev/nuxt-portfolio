@@ -23,31 +23,24 @@
         tile
         >{{ location.name }}</v-btn
       >
-      <v-app-bar-nav-icon
-        class="hidden-md-and-up"
-        @click="drawer = !drawer"
-      ></v-app-bar-nav-icon>
+      <v-menu bottom left>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn dark icon v-bind="attrs" v-on="on" class="hidden-md-and-up">
+            <v-icon>mdi-dots-vertical</v-icon>
+          </v-btn>
+        </template>
+
+        <v-list>
+          <v-list-item v-for="(location, index) in locations" :key="index">
+            <v-list-item-title>
+              <v-btn :to="location.link" class="mx-2 white black--text" tile>{{
+                location.name
+              }}</v-btn>
+            </v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
     </v-app-bar>
-    <v-navigation-drawer v-model="drawer" absolute temporary>
-      <v-list-item>
-        <v-col>
-          <v-list-item-content
-            ><p class="text-center">Riza Khan</p></v-list-item-content
-          >
-          <v-list-item-content class="ma-0"
-            ><p class="text-center ma-0">Web Developer</p></v-list-item-content
-          >
-        </v-col>
-      </v-list-item>
-      <v-divider></v-divider>
-      <v-list-item
-        v-for="(location, index) in locations"
-        :key="index"
-        link
-        :to="location.link"
-        >{{ location.name }}</v-list-item
-      >
-    </v-navigation-drawer>
   </div>
 </template>
 
