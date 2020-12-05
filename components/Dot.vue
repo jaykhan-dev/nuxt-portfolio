@@ -31,35 +31,4 @@ export default {
 svg {
   position: absolute;
 }
-
-.twinkle {
-  transition: all 0.5s ease;
-  animation: twinkle 2s ease forwards;
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes twinkle {
-  0% {
-    transform: scale(1);
-    background: grey;
-  }
-
-  50% {
-    transform: scale(1.5);
-    background: white;
-  }
-
-  100% {
-    transform: scale(1);
-    background: grey;
-  }
-}
 </style>

@@ -5,19 +5,23 @@ h1 {
 }
 
 h2 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #1976d2;
   margin-top: 1em;
   font-weight: 300;
 }
 
-h3 {
-  font-size: 1.5rem;
+h3, h4 {
+  font-size: 1.75rem;
   color: #1976d2;
   border-bottom: 1px solid rgba(200, 200, 200, 0.2);
   margin: 1em 0;
   padding: 0.5em 0;
   font-weight: 300;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 @media (min-width: 600px) {
