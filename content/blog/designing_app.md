@@ -1,12 +1,12 @@
 ---
-title: Designing a VueJS 3 App
+title: Vue 3 Router
 
-description: Lets learn how to code a large application. The basic steps required to ensure you create a maintainable application.
+description: Lets learn how to build a router in VueJS. Probably the one part that will give you a high level snapshot of the application. There is where you should start when designing a new application.
 
 previewImage: generic/code.jpg
 
 categories:
-- VueJS
+  - VueJS
 
 published: false
 ---
@@ -22,6 +22,7 @@ Lets take a simple example, a blog (so everyone can follow along).
 ## Consider all factors
 
 Not all blogs are the same, lets consider all the factors in our case (in this case, these are random).
+
 1. Only the user can create a blog
 2. The visitor can search by title, content and/or category.
 3. Blogs have images and are of a technical nature
@@ -33,6 +34,7 @@ Lets make the assumption there is a login functionality and blogs are written in
 I believe the first thing to create is a router. This will give you a high level snapshot of the application. What are the routes which you can consider when creating components and views.
 
 This is what a basic router will look like:
+
 ```javascript
 import { createWebHistory, createRouter } from 'vue-router'
 // these are views (not 'components')
@@ -45,32 +47,41 @@ import Dashboard from '@/views/Blog.vue'
 // router is an array of routes
 const routes = [
   {
-    path: "/", // this routes URL path, this will also be where we will showcase all the blogs
-    name: "Home", // Optional, can be used to route to
-    component: Home // The component/file that will be rendered
+    path: '/', // this routes URL path, this will also be where we will showcase all the blogs
+    name: 'Home', // Optional, can be used to route to
+    component: Home, // The component/file that will be rendered
   },
   {
-    path: "/about",
-    name: "About",
-    component: About
+    path: '/about',
+    name: 'About',
+    component: About,
   },
   {
-    path: "/contact",
-    name: "Contact",
-    component: Contact
+    path: '/contact',
+    name: 'Contact',
+    component: Contact,
   },
   {
-    path: "/blog/:id", // the individual blog in a dynamic route
-    name: "Blog",
-    component: Blog
+    path: '/blog', // the individual blog in a dynamic route
+    name: 'Blogs',
+    component: Blogs,
   },
+  {
+    path: '/blog/:id', // the individual blog in a dynamic route. Not the :id can be targeted via $route.params.id (and if you name it som thing like :blogId, it will be $route.params.blogId)
+    name: 'Blog',
+    component: Blog,
+  },
+  {
+    path: "/dashboard",
+    name: "Dashboard",
+    component: Dashboard
+  }
 ]
 
 const router = createRouter({
   history: createWebHistory(), // use history mode instead of hash, note how it is done differently then Vue2
   routes,
 })
-
 ```
 
 Thats about all the routes the visitor is should see. However as a create and contributor to the site, we need to create/update/read/delete (CURD) new blogs.
@@ -81,31 +92,9 @@ Creating and editing are about the same funtionality in my opinion, the only dif
 
 So perhaps it could look something like this:
 
-```javascript
-  {
-    path: "/blog/:id/create", // Creating a new blog
-    name: "Blog",
-    component: Blog
-  },
-  {
-    path: "/blog/:id/edit", // Editin a old blog
-    name: "Blog",
-    component: Blog
-  },
-```
-
 You will notice, we are using the same component. Only our endpoint is different, which will trigger different components to render.
 
-/// Correct this
-How exactly do we do this? We can use `route.params`.
+You are probably wondering, how will we
 
 But as a creator, you'll need an admin location where you can trigger the status of blogs on or off:
-
-```javascript
-  {
-    path: "/dashboard",
-    name: "Dashboard",
-    component: Dashboard
-  }
-```
 

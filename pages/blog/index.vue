@@ -11,14 +11,21 @@
         :key="index"
         cols="12"
         md="6"
-        ><NuxtLink :to="{ name: 'blog-slug', params: { slug: blog.slug } }">
-          <v-card :class="{ grow: hover }" class="mx-auto" max-width="600">
-            <dynamic-image :filename="blog.previewImage"></dynamic-image>
-            <v-card-title class="text-h5">{{ blog.title }}</v-card-title>
-            <v-card-text class="text--primary">
+        >
+        <pre>
+          {{ blog }}
+        </pre>
+        <NuxtLink :to="{ name: 'blog-slug', params: { slug: blog.slug } }">
+          <v-row class="pa-5 ma-5 bordered">
+            <v-col cols="12" md="6" lg="4" class="d-flex justify-center">
+              <dynamic-image :filename="blog.previewImage"></dynamic-image>
+            </v-col>
+            <v-col class="ml-5">
+              <h1>{{ blog.title }}</h1>
+              <p>{{ formatDate(blog.createdAt) }}</p>
               <p>{{ blog.description }}</p>
-            </v-card-text>
-          </v-card>
+            </v-col>
+          </v-row>
         </NuxtLink>
       </v-col>
     </v-row>
