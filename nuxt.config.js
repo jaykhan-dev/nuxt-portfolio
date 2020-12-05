@@ -5,7 +5,6 @@ export default {
   mode: 'universal',
   target: 'static',
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
     title: 'Riza Khan | Web Developer',
     meta: [
       { charset: 'utf-8' },
