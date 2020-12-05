@@ -3,7 +3,7 @@ title: Introduction To Puppeteer JS
 
 description: The 101 of Puppeteer and what it is all about?
 
-previewImage: generic/puppetlogo.png
+previewImage: generic/puppeteer-logo.png
 
 published: false
 

@@ -3,7 +3,7 @@ title: Increasing Your Typing Speed
 
 description: How I got my typing speed above 100 WPM
 
-previewImage: generic/code.jpg
+previewImage: generic/vue-logo.jpg
 
 categories:
   - Vanilla Javascript

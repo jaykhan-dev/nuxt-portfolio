@@ -3,7 +3,7 @@ title: Automated Slider
 
 description: How to build an automated slider using vanilla Javascript
 
-previewImage: slider/slider.png
+previewImage: generic/js-logo.png
 
 categories:
   - Vanilla Javascript

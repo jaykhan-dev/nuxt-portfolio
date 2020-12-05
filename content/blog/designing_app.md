@@ -3,7 +3,7 @@ title: Vue 3 Router
 
 description: Lets learn how to build a router in VueJS. Probably the one part that will give you a high level snapshot of the application. There is where you should start when designing a new application.
 
-previewImage: generic/code.jpg
+previewImage: generic/vue-logo.jpg
 
 categories:
   - VueJS
@@ -72,10 +72,10 @@ const routes = [
     component: Blog,
   },
   {
-    path: "/dashboard",
-    name: "Dashboard",
-    component: Dashboard
-  }
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: Dashboard,
+  },
 ]
 
 const router = createRouter({
@@ -97,4 +97,3 @@ You will notice, we are using the same component. Only our endpoint is different
 You are probably wondering, how will we
 
 But as a creator, you'll need an admin location where you can trigger the status of blogs on or off:
-

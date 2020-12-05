@@ -3,7 +3,7 @@ title: Sorting in Javascript
 
 description: A couple of senarios of sorting in Javascript
 
-previewImage: generic/code.jpg
+previewImage: generic/js-logo.png
 
 categories:
   - Javascript

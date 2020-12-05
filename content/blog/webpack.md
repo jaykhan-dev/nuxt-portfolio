@@ -3,12 +3,12 @@ title: Webpack (Getting Started)
 
 description: An absolutely essential tool to know as a Frontend Developer. Automates the boring tasks so you are building your project from the get go.
 
-previewImage: generic/code.jpg
+previewImage: generic/js-logo.png
 
 published: false
 
 categories:
-- Vanilla Javascript
+  - Vanilla Javascript
 ---
 
 # Webpack

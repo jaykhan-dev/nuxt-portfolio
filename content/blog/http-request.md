@@ -3,13 +3,13 @@ title: Sending Javascript with HTTP POST Request
 
 description: Have you ever wanted to send a script with your POST request?
 
-previewImage: generic/code.jpg
+previewImage: generic/js-logo.png
 
 published: false
 
 categories:
-- HTTP
-- Javascript
+  - HTTP
+  - Javascript
 ---
 
 # HTTP Requests

@@ -3,7 +3,7 @@ title: Vuex Modules in Vue 3
 
 description: How to separate your modules in Vue 3
 
-previewImage: generic/vuejslogo.jpg
+previewImage: generic/vue-logo.jpg
 
 published: true
 

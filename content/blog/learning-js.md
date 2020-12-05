@@ -3,12 +3,12 @@ title: Learning Javascript (My Journey)
 
 description: Just going over my brief history with Javascript and where I am hoping to go
 
-previewImage: generic/code.jpg
+previewImage: generic/js-logo.png
 
 published: true
 
 categories:
-- Vanilla Javascript
+  - Vanilla Javascript
 ---
 
 # Javascript, My Journey
@@ -24,6 +24,7 @@ I don't know who it is by and I don't really care to know, but it rang true for 
 And that meant, I had to love it most of the day I hated it. I had to push harder on the days that I didn't feel like pushing at all. The choice I made was probably the most difficult thing I have ever done.
 
 A typical day would look like this:
+
 1. 8:00AM Wake up
 2. Go to the basement and start coding
 3. 12:00PM Sleep
@@ -39,5 +40,3 @@ I've specifically decided to pursue `web scrapping`. I think that the internet i
 For example, a lot of these giant retailers don't have the best API's to go through their database quickly. The old adage 'time is money' would mean that whoever gets that data faster will be the winner. That is where web scrapping comes in. Now, I hardly know anything about this subject so, I am not going to assume anything.
 
 I am going to start small and practice scrapping harder and harder websites. Put those scripts out on Github and then showcase them to potential employers. Apparently this work is quite lucrative. The better I get at it, the more I can end up charging.
-
-

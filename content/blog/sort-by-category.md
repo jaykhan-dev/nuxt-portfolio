@@ -1,7 +1,7 @@
 ---
 title: Nuxt Content Adding a category sort
 description: We explore how we can sort by category as well as search term in Nuxt Content. A solid choice for a headless CMS
-previewImage: generic/puppetlogo.png
+previewImage: generic/puppeteer-logo.png
 categories:
   - Nuxt Content
   - VueJS
@@ -57,6 +57,7 @@ categories() {
   return categories = [...new Set(categories)]
 }
 ```
+
 The `Set` method helps us to remove any duplicates.
 
 Now that we have categories, why don't we act like professional VueJS developers and pass that as a prop to a component called... `BlogCategories`? While we set it up, lets also listen for category selectors event via an `$emit`.
@@ -91,7 +92,6 @@ computed: {
 ```
 
 Now lets take a quick peek at our new Categories component and see how we can set it up for optimal funtionality.
-
 
 ```javascript
 <template>

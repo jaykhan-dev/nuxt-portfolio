@@ -11,21 +11,35 @@
         :key="index"
         cols="12"
         md="6"
-        >
-        <pre>
-          {{ blog }}
-        </pre>
+      >
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: blog.slug } }">
-          <v-row class="pa-5 ma-5 bordered">
-            <v-col cols="12" md="6" lg="4" class="d-flex justify-center">
-              <dynamic-image :filename="blog.previewImage"></dynamic-image>
-            </v-col>
-            <v-col class="ml-5">
-              <h1>{{ blog.title }}</h1>
-              <p>{{ formatDate(blog.createdAt) }}</p>
-              <p>{{ blog.description }}</p>
-            </v-col>
-          </v-row>
+          <v-card class="mx-auto" max-width="500" outlined>
+            <v-list-item three-line>
+              <v-list-item-content>
+                <div class="overline mb-4">
+                  {{ formatDate(blog.createdAt) }}
+                </div>
+                <v-list-item-title class="headline mb-1">
+                  {{ blog.title }}
+                </v-list-item-title>
+                <v-list-item-subtitle>{{
+                  blog.description
+                }}</v-list-item-subtitle>
+              </v-list-item-content>
+              <v-list-item-avatar tile size="80">
+                <v-img
+                  contain
+                  :src="require(`~/assets/images/${blog.previewImage}`)"
+                ></v-img>
+              </v-list-item-avatar>
+            </v-list-item>
+
+            <v-card-actions>
+              <v-btn outlined text class="blue">
+                Read More
+              </v-btn>
+            </v-card-actions>
+          </v-card>
         </NuxtLink>
       </v-col>
     </v-row>

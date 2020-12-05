@@ -3,7 +3,7 @@ title: Snackbar
 
 description: Creating a Global Snackbar component in Vue3 /w tests
 
-previewImage: generic/vuejslogo.jpg
+previewImage: generic/vue-logo.jpg
 
 categories:
   - VueJS

@@ -1,13 +1,13 @@
 ---
 title: Designing a VueJS application
 description: What should the code and file structure of a VueJS application look like?
-previewImage: generic/puppetlogo.png
+previewImage: generic/puppeteer-logo.png
 
 published: true
 
 categories:
-- VueJS
-- Javascript
+  - VueJS
+  - Javascript
 ---
 
 # Designing an application's code structure
@@ -24,7 +24,7 @@ We will explore all of these in a VueJS environment.
 
 ## Router
 
-We won't go over too much technical information here, because I feel the official docs are significantly better for learning that aspect. But they don't really show you *how* you should build/design a router.
+We won't go over too much technical information here, because I feel the official docs are significantly better for learning that aspect. But they don't really show you _how_ you should build/design a router.
 
 Imaine a very simple site:
 
@@ -56,4 +56,3 @@ So you have a landing page, and it gives you some information about your account
 
 Perhaps how their account is doing? So they navigate to that particular page, where the API for account information is called and that information is loaded to the system. That will allow for a better user experience because the application will load faster. Speed is definietly one of the main
 focuses a developer should have. The UX is extremely important for getting and keeping clients.
-

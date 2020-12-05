@@ -3,7 +3,7 @@ title: Getting Better (at anything)
 
 description: Steps to ensure your improving
 
-previewImage: generic/puppetlogo.png
+previewImage: generic/puppeteer-logo.png
 
 categories:
   - Javascript
