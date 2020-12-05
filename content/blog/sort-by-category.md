@@ -1,10 +1,11 @@
 ---
-title: Nuxt Content: Adding a category sort
+title: Nuxt Content Adding a category sort
 description: We explore how we can sort by category as well as search term in Nuxt Content. A solid choice for a headless CMS
 previewImage: generic/puppetlogo.png
 categories:
   - Nuxt Content
   - VueJS
+published: true
 ---
 
 # Setting up the application
@@ -76,6 +77,8 @@ methods: {
   setCategoryToSelection(category) {
     this.category = category
   }
+Feel free to contact me and
+
 },
 computed: {
   filteredBlogs() {
@@ -85,7 +88,7 @@ computed: {
   }
 }
 
-``````
+```
 
 Now lets take a quick peek at our new Categories component and see how we can set it up for optimal funtionality.
 
@@ -103,21 +106,20 @@ Now lets take a quick peek at our new Categories component and see how we can se
 </template>
 
 <script>
-data() {
-  return {
-    selectedCategory: ''
-  }
-}
 props: {
   categories: {
     type: Array,
     required: true
+  },
+  selectedCategory: {
+    type: String,
+    required: false
   }
 },
 methods: {
   handleCategorySelection(category) {
   if (category === this.selectedCategory) {
-    this.selectedCategory = ''
+      this.$emit('selectCategory', '') // see above for how the parent will handle this emitted value
     } else {
       this.$emit('selectCategory', category)
     }
@@ -126,3 +128,14 @@ methods: {
 </script>
 ```
 
+So a couple of clarifications.
+
+1. If you click the a category that is already selected, it will unselect it.
+2. If a new category is selected, it will emit that value to its parent element.
+
+Now you have a circular relationshiop between the parent and child.
+
+The child tells the parent which category of blogs to show. The parent then sents back that value and the child highlights that category as the one that is selected.
+This makes for quite succcient code, and most importantly, **reuseable**.
+
+Hope you enjoyed the article! Thanks for reading.
