@@ -1,6 +1,23 @@
 <template>
   <v-container>
     <v-row>
+      <v-col>
+        <NuxtLink
+          v-if="prev"
+          :to="{ name: 'blog-slug', params: { slug: prev.slug } }"
+        >
+          {{ prev.title }}
+        </NuxtLink>
+
+        <NuxtLink
+          v-if="next"
+          :to="{ name: 'blog-slug', params: { slug: next.slug } }"
+        >
+          {{ next.title }}
+        </NuxtLink>
+      </v-col>
+    </v-row>
+    <v-row>
       <v-col cols="12" lg="3">
         <TableOfContents :toc="doc.toc" sticky="true" />
       </v-col>
@@ -19,10 +36,17 @@ export default {
   },
   async asyncData({ $content, params, redirect }) {
     const doc = await $content('blog', params.slug).fetch()
+
+    const [prev, next] = await $content('blog')
+      .only(['title', 'slug'])
+      .sortBy('createdAt', 'asc')
+      .surround(params.slug)
+      .fetch()
+
     if (!doc.published) {
       redirect('/blog')
     }
-    return { doc }
+    return { doc, prev, next }
   },
 }
 </script>
