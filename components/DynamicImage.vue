@@ -7,7 +7,7 @@
       loading="lazy"
       cover
     />
-    <p class="my-4 text-center subtitle-1">
+    <p v-if="caption" class="my-4 text-center subtitle-1">
       {{ caption }}
     </p>
   </div>

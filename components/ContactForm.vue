@@ -6,14 +6,14 @@
           <v-text-field
             type="text"
             name="name"
-            label="Full Name"
-            oulined
+            label="Name"
+            outlined
           ></v-text-field>
           <v-text-field
             type="email"
             name="email"
             label="Email"
-            oulined
+            outlined
           ></v-text-field>
           <v-textarea name="message" label="Message" outlined></v-textarea>
           <v-row>
