@@ -9,6 +9,7 @@ describe('ContactForm.vue', () => {
 
   it('should contain a form', () => {
     const wrapper = mount(ContactForm)
-    expect(wrapper.contains('form')).toBe(true)
+    const form = wrapper.find('form')
+    expect(form.exists()).toBe(true)
   })
 })

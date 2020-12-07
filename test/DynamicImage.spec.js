@@ -14,10 +14,7 @@ describe('DynamicImage.vue', () => {
 
   it('should have a max-height attribute of 480', () => {
     const wrapper = mount(DynamicImage)
-    const image = wrapper.find('.v-image__image')
     expect(wrapper.exists()).toBe(true)
     expect(wrapper.is(DynamicImage)).toBe(true)
-    expect(image.exists()).toBe(true)
-    // expect(wrapper.findAll('v-image__image').exists()).toBe(true)
   })
 })
