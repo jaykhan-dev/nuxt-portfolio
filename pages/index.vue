@@ -3,7 +3,7 @@
     <v-row>
       <v-col cols="12" md="6" offset-md="2" lg="3" offset-lg="3">
         <h1 class="display-4 white--text">Jawad Khan</h1>
-        <p class="subtitle-1 pl-2">UI/UX Developer</p>
+        <p class="subtitle-1 pl-2">UI/UX Designer</p>
         <v-row class="pl-4">
           <v-btn
             outlined
