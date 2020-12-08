@@ -1,12 +1,8 @@
 ---
 title: Your Just Not That Stupid
-
 description: If you put your mind to it, you can achieve it. Showing up is most of the work.
-
 previewImage: generic/js-logo.png
-
 published: false
-
 categories:
   - Life
 ---

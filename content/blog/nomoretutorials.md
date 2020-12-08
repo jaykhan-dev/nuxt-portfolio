@@ -1,12 +1,8 @@
 ---
 title: No More Tutorials
-
 description: There will have to come a time where you will just have to stop watching tutorials
-
 previewImage: generic/vue-logo.jpg
-
 published: false
-
 categories:
   - Javascript
 ---

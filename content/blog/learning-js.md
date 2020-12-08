@@ -1,12 +1,8 @@
 ---
 title: Learning Javascript (My Journey)
-
 description: Just going over my brief history with Javascript and where I am hoping to go
-
 previewImage: generic/js-logo.png
-
 published: true
-
 categories:
   - Javascript
 ---
