@@ -41,8 +41,16 @@
                 </v-list-item>
 
                 <v-card-actions>
-                  <v-btn outlined text class="blue">
-                    Read More
+                  <v-btn
+                    v-for="(category, i) in blog.categories"
+                    :key="i"
+                    outlined
+                    rounded
+                    text
+                    x-small
+                    class="blue"
+                  >
+                    {{ category }}
                   </v-btn>
                 </v-card-actions>
               </v-card>
