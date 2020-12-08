@@ -9,7 +9,6 @@ published: false
 
 categories:
   - Life
-  - Programming
 ---
 
 # Show Up!

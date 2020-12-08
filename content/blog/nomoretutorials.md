@@ -8,7 +8,7 @@ previewImage: generic/vue-logo.jpg
 published: false
 
 categories:
-  - Vanilla Javascript
+  - Javascript
 ---
 
 # Leveling Up As A Developer

@@ -3,8 +3,8 @@ title: Nuxt Content Adding a category sort
 description: We explore how we can sort by category as well as search term in Nuxt Content. A solid choice for a headless CMS
 previewImage: generic/puppeteer-logo.png
 categories:
-  - Nuxt Content
   - VueJS
+  - Nuxt
 published: true
 ---
 

@@ -6,7 +6,7 @@ description: How I got my typing speed above 100 WPM
 previewImage: generic/vue-logo.jpg
 
 categories:
-  - Vanilla Javascript
+  - Javascript
 
 published: true
 ---

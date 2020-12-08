@@ -8,7 +8,7 @@ previewImage: generic/js-logo.png
 published: false
 
 categories:
-  - Vanilla Javascript
+  - Javascript
 ---
 
 # Webpack

@@ -8,7 +8,6 @@ previewImage: generic/js-logo.png
 published: false
 
 categories:
-  - HTTP
   - Javascript
 ---
 

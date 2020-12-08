@@ -8,7 +8,7 @@ previewImage: generic/js-logo.png
 published: true
 
 categories:
-  - Vanilla Javascript
+  - Javascript
 ---
 
 # Javascript, My Journey

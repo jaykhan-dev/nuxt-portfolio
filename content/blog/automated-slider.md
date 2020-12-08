@@ -6,7 +6,7 @@ description: How to build an automated slider using vanilla Javascript
 previewImage: generic/js-logo.png
 
 categories:
-  - Vanilla Javascript
+  - Javascript
 
 published: true
 ---
