@@ -10,7 +10,7 @@
             <span>|</span>
           </v-col>
           <v-col class="hidden-sm-and-down">
-            <span>UI/UX Developer</span>
+            <span>UI/UX Designer</span>
           </v-col>
         </v-row>
       </v-toolbar-title>
@@ -36,7 +36,7 @@
           >
           <v-list-item-content class="ma-0"
             ><p class="text-center ma-0">
-              UI/UX Developer
+              UI/UX Designer
             </p></v-list-item-content
           >
         </v-col>
