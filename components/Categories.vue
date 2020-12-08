@@ -33,9 +33,9 @@ export default {
   methods: {
     selectCategory(category) {
       if (category === this.selectedCategory) {
-        this.$emit('selectCategory', '')
+        this.$emit('select-category', '')
       } else {
-        this.$emit('selectCategory', category)
+        this.$emit('select-category', category)
       }
     },
   },

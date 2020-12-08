@@ -10,7 +10,7 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col cols="12" md="8">
+      <v-col cols="12" lg="8">
         <v-row>
           <v-col
             v-for="(blog, index) in filteredBlogs"
@@ -19,7 +19,7 @@
             md="6"
           >
             <NuxtLink :to="{ name: 'blog-slug', params: { slug: blog.slug } }">
-              <v-card max-width="500" outlined>
+              <v-card max-width="600" outlined>
                 <v-list-item three-line>
                   <v-list-item-content>
                     <div class="overline mb-4">
@@ -62,7 +62,7 @@
         <Categories
           :categories="categories"
           :selected-category="category"
-          @selectCategory="selectCategory"
+          @select-category="selectCategory"
         />
       </v-col>
     </v-row>

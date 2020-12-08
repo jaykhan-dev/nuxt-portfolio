@@ -1,5 +1,10 @@
 <template>
-  <svg width="30" :style="{ top: x, left: y, opacity: o }" height="30">
+  <svg
+    ref="dot"
+    width="30"
+    :style="{ top: x, left: y, opacity: o }"
+    height="30"
+  >
     <circle cx="15" cy="15" :r="r" stroke-width="4" fill="white" />
   </svg>
 </template>
@@ -24,11 +29,31 @@ export default {
       required: true,
     },
   },
+  data() {
+    return {
+      interval: '',
+    }
+  },
+  mounted() {
+    this.interval = setInterval(() => {
+      this.$refs.dot.style.top = this.randomNumber(0, window.innerHeight)
+      this.$refs.dot.style.left = this.randomNumber(0, window.innerWidth)
+    }, 4000)
+  },
+  destroyed() {
+    clearInterval(this.interval)
+  },
+  methods: {
+    randomNumber(min, max) {
+      return Math.floor(Math.random() * (max - min) + min)
+    },
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 svg {
   position: absolute;
+  transition: all 2s ease;
 }
 </style>

@@ -20,8 +20,8 @@
     <Dot
       v-for="dot in dots"
       :key="dot"
-      :x="randomNumber(0, windowHeight)"
-      :y="randomNumber(0, windowWidth)"
+      :x="windowHeight * 0.5"
+      :y="windowWidth * 0.5"
       :r="randomNumber(0, 4)"
       :o="randomNumber(0, 1)"
     />
@@ -31,10 +31,10 @@
 <script>
 import Dot from '@/components/Dot'
 export default {
-  layout: 'landing',
   components: {
     Dot,
   },
+  layout: 'landing',
   data() {
     return {
       dots: 100,
