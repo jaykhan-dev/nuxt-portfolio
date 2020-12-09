@@ -38,14 +38,15 @@ export default {
     this.interval = setInterval(() => {
       this.$refs.dot.style.top = this.randomNumber(0, window.innerHeight)
       this.$refs.dot.style.left = this.randomNumber(0, window.innerWidth)
-    }, 4000)
+      this.$refs.dot.style.opacity = this.randomNumber(0, 1)
+    }, 1500)
   },
   destroyed() {
     clearInterval(this.interval)
   },
   methods: {
     randomNumber(min, max) {
-      return Math.floor(Math.random() * (max - min) + min)
+      return Math.random() * (max - min) + min
     },
   },
 }
