@@ -19,7 +19,7 @@
             md="6"
           >
             <NuxtLink :to="{ name: 'blog-slug', params: { slug: blog.slug } }">
-              <v-card max-width="600" outlined>
+              <v-card outlined>
                 <v-list-item three-line>
                   <v-list-item-content>
                     <div class="overline mb-4">
