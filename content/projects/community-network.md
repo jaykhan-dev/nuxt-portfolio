@@ -4,9 +4,13 @@ description: Graphics and Motion design
 previewImage: slider/bluebird-cafe.jpg
 ---
 
-# 
+# The Community Network
+
+## Graphic Design
+
+## Motion Graphics
 
 
 
 
-//<dynamic-image filename="expertcasting/internal.png"></dynamic-image>
+

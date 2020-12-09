@@ -1,7 +1,7 @@
 ---
 title: Rampart
 description: Marketing for lithium batteries
-previewImage: static-sites/broadstreet-landing-page.png
+previewImage: slider/rampart.jpg
 ---
 
 # My part
