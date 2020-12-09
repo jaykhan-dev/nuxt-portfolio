@@ -1,7 +1,7 @@
 ---
 title: Scribendi 
 description: UI/UX Design, Adobe XD, Illustrator, Marketing, Graphic Design
-previewImage: slider/slider.png
+previewImage: slider/scribendi.png
 ---
 
 # Scribendi
@@ -12,9 +12,12 @@ All the pages were designed with Adobe XD.
 
 ## UI/UX
 
+
 ## Marketing
+<dynamic-image filename="slider/scribendi.jpg"></dynamic-image>
+
 
 ## Graphic Design
 
 // Use the below to import images
-<dynamic-image filename="slider/scribendi.jpg"></dynamic-image>
+
