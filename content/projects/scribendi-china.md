@@ -1,7 +1,7 @@
 ---
 title: Scribendi 
 description: UI/UX Design, Adobe XD, Illustrator, Marketing, Graphic Design
-previewImage: slider/scribendi.png
+previewImage: slider/scribendi.jpg
 ---
 
 # Scribendi
