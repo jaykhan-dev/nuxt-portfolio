@@ -19,5 +19,7 @@ All the pages were designed with Adobe XD.
 
 ## Graphic Design
 
+## Video
+
 // Use the below to import images
 

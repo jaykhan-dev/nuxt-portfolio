@@ -1,6 +1,6 @@
 ---
 title: The Community Network
-description: Graphics and Motion design
+description: Graphics and Motion design, Adobe Photoshop, Illustrator, Affer Effects
 previewImage: slider/bluebird-cafe.jpg
 ---
 
