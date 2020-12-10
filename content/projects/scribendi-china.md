@@ -21,5 +21,7 @@ All the pages were designed with Adobe XD.
 
 ## Video
 
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/os7JezfFh8I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 // Use the below to import images
 
