@@ -10,19 +10,19 @@ I was involved with creating all the pages for desktop, tablet and mobile. This 
 
 All the pages were designed with Adobe XD.
 
-## UI/UX
+### UI/UX
 
 
-## Marketing
+### Marketing
 
 For Scribendi AI article that appeared in the local paper for Chatham, Ontario. 
 <dynamic-image filename="scribendi/scribendi.jpg"></dynamic-image>
 
-## Video
+### Video
 
 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/os7JezfFh8I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Graphic Design
+### Graphic Design
 
 
 
