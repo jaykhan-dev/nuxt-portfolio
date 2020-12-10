@@ -14,14 +14,17 @@ All the pages were designed with Adobe XD.
 
 
 ## Marketing
-<dynamic-image filename="generic/scribendi.jpg"></dynamic-image>
 
-
-## Graphic Design
+For Scribendi AI article that appeared in the local paper for Chatham, Ontario. 
+<dynamic-image filename="scribendi/scribendi.jpg"></dynamic-image>
 
 ## Video
 
-<iframe width="100%" height="720" src="https://www.youtube.com/embed/os7JezfFh8I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/os7JezfFh8I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Graphic Design
+
+
 
 
 
