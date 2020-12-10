@@ -16,7 +16,7 @@ All the pages were designed with Adobe XD.
 ### Marketing
 
 For Scribendi AI article that appeared in the local paper for Chatham, Ontario. 
-<dynamic-image filename="scribendi/scribendi.jpg"></dynamic-image>
+<dynamic-image filename="scribendi/scribendi.jpg" width="1400px"></dynamic-image>
 
 ### Video
 

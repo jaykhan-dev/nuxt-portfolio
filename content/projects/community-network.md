@@ -4,11 +4,11 @@ description: Graphics and Motion design, Adobe Photoshop, Illustrator, Affer Eff
 previewImage: slider/bluebird-cafe.jpg
 ---
 
-# The Community Network
+### The Community Network
 
-## Graphic Design
+### Graphic Design
 
-## Motion Graphics
+### Motion Graphics
 
 
 
