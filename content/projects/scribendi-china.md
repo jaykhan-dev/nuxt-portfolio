@@ -1,7 +1,7 @@
 ---
-title: Scribendi 
-description: UI/UX Design, Adobe XD, Illustrator, Marketing, Graphic Design
-previewImage: slider/scribendi.jpg
+title: Graphic Design
+description: Scribendi, The Community Network, Rampart Corp
+previewImage: slider/.jpg
 ---
 
 # Scribendi

@@ -1,7 +1,7 @@
 ---
-title: The Community Network
-description: Graphics and Motion design, Adobe Photoshop, Illustrator, Affer Effects
-previewImage: slider/bluebird-cafe.jpg
+title: UI/UX Design
+description: Scribendi
+previewImage: slider/.jpg
 ---
 
 # The Community Network
