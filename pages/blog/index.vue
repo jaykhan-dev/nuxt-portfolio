@@ -22,15 +22,12 @@
               <v-card outlined>
                 <v-list-item three-line>
                   <v-list-item-content>
-                    <div class="overline mb-4">
+                    <div class="overline text--disabled">
                       {{ formatDate(blog.createdAt) }}
                     </div>
-                    <v-list-item-title class="headline mb-1">
+                    <v-list-item-title class="text-wrap">
                       {{ blog.title }}
                     </v-list-item-title>
-                    <v-list-item-subtitle>{{
-                      blog.description
-                    }}</v-list-item-subtitle>
                   </v-list-item-content>
                   <v-list-item-avatar tile size="80">
                     <v-img
@@ -42,15 +39,15 @@
 
                 <v-card-actions>
                   <v-btn
-                    v-for="(category, i) in blog.categories"
+                    v-for="(cat, i) in blog.categories"
                     :key="i"
                     outlined
                     rounded
                     text
                     x-small
-                    class="blue"
+                    class="grey"
                   >
-                    {{ category }}
+                    {{ cat }}
                   </v-btn>
                 </v-card-actions>
               </v-card>
@@ -85,7 +82,6 @@ export default {
         'slug',
         'previewImage',
         'categories',
-        'description',
         'published',
       ])
       .sortBy('updatedAt', 'desc')
