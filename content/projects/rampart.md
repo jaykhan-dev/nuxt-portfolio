@@ -1,10 +1,13 @@
 ---
-title: Rampart
-description: Marketing for lithium batteries
+title: Rampart Corp
+description: Marketing, Graphic design, Data Entry
 previewImage: slider/rampart.jpg
 ---
 
-# Rampart
+# Rampart Corp
+
+Rampart is Canada's leading supplier of operational equipment.  They are based in Ottawa. 
+
 ### Marketing
 ### Graphic Design
 
