@@ -1,7 +1,7 @@
 ---
 title: Music
 description: Ableton, Soundcloud, Novation Bass Station
-previewImage: slider/melange.jpg
+previewImage: slider/music-icon.png
 ---
 
 # Melange Arts

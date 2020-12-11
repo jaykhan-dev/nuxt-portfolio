@@ -6,7 +6,7 @@ export default {
   target: 'static',
   head: {
     titleTemplate: '%s - ' + process.env.npm_package_name,
-    title: 'Jawad Khan | UX/UI Designer',
+    title: 'Jawad Khan Portfolio',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
