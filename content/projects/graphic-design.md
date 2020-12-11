@@ -4,31 +4,19 @@ description: Scribendi, The Community Network, Rampart Corp
 previewImage: slider/.jpg
 ---
 
-# Scribendi
+# Graphic Design
 
-I was involved with creating all the pages for desktop, tablet and mobile. This included lo-fi wireframes, flow charts, interactive prototypes and graphic design work. The project took roughly 3 months with designs originally made in English and then translated into Chinese.
-
-All the pages were designed with Adobe XD.
-
-### UI/UX
-
-<a>www.scribendichina.com</a>
-
-### Marketing
-
-For Scribendi AI article that appeared in the local paper for Chatham, Ontario. 
+### Scribendi
 <dynamic-image filename="scribendi/scribendi.jpg"></dynamic-image>
-<img src="scribendi/scribendi.jpg" alt="2hummingbirds" width="100%" height="100%">
-
-### Video
-
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/os7JezfFh8I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### Graphic Design
 
 
+### The Community Network
 
+<dynamic-image filename="comnet/bluebird-cafe.jpg"></dynamic-image>
+<dynamic-image filename="comnet/canadian-tire.png"></dynamic-image>
+<dynamic-image filename="comnet/furniture.png"></dynamic-image>
+<dynamic-image filename="comnet/sgscompuwave.jpg"></dynamic-image>
+<dynamic-image filename="comnet/logo.jpg"></dynamic-image>
 
-
-// Use the below to import images
+### Rampart Corp
 

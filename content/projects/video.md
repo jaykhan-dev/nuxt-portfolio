@@ -4,12 +4,12 @@ description: Scribendi, The Community Network
 previewImage: slider/.jpg
 ---
 
-# Rampart Corp
+# Scribendi 
 
-Rampart is Canada's leading supplier of operational equipment.  They are based in Ottawa. 
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/os7JezfFh8I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Marketing
+### The Community Network
 
  
-### Graphic Design
+
 

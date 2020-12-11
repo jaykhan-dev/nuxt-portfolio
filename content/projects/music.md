@@ -4,7 +4,9 @@ description: Melange Arts
 previewImage: slider/music-icon.png
 ---
 
-# Melange Arts
+# Music
+
+### Melange Arts
 
 Melange Arts is a work in progress for mixed-media publishing.  I am currently working on some designs and hope to publish a website in the next few months. 
 

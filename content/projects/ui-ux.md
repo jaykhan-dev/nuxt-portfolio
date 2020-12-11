@@ -4,17 +4,12 @@ description: Scribendi
 previewImage: slider/.jpg
 ---
 
-# The Community Network
+# UI/UX Design
 
-### Graphic Design
+### Scribendi
 
-<dynamic-image filename="comnet/bluebird-cafe.jpg"></dynamic-image>
-<dynamic-image filename="comnet/canadian-tire.png"></dynamic-image>
-<dynamic-image filename="comnet/furniture.png"></dynamic-image>
-<dynamic-image filename="comnet/sgscompuwave.jpg"></dynamic-image>
-<dynamic-image filename="comnet/logo.jpg"></dynamic-image>
+www.scribendichina.com
 
-### Motion Graphics
 
 
 
