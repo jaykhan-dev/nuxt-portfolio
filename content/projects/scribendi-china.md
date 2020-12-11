@@ -12,11 +12,13 @@ All the pages were designed with Adobe XD.
 
 ### UI/UX
 
+<a>www.scribendichina.com</a>
 
 ### Marketing
 
 For Scribendi AI article that appeared in the local paper for Chatham, Ontario. 
 <dynamic-image filename="scribendi/scribendi.jpg"></dynamic-image>
+<img src="scribendi/scribendi.jpg" alt="2hummingbirds" width="100%" height="100%">
 
 ### Video
 
