@@ -1,10 +1,7 @@
 ---
 title: Removing All Subscriptions From Youtube Account
-description: A quick script on how to remove all subscriptions from a Youtube account
 previewImage: generic/puppeteer-logo.png
-
 published: true
-
 categories:
   - Puppeteer
   - Javascript

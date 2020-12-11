@@ -1,13 +1,8 @@
 ---
 title: Getting Better (at anything)
-
-description: Steps to ensure your improving
-
 previewImage: generic/puppeteer-logo.png
-
 categories:
   - Javascript
-
 published: false
 ---
 

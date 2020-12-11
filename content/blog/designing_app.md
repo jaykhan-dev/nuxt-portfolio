@@ -1,13 +1,8 @@
 ---
 title: Vue 3 Router
-
-description: Lets learn how to build a router in VueJS. Probably the one part that will give you a high level snapshot of the application. There is where you should start when designing a new application.
-
 previewImage: generic/vue-logo.jpg
-
 categories:
   - VueJS
-
 published: false
 ---
 

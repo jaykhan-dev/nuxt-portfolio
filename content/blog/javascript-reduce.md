@@ -1,13 +1,8 @@
 ---
 title: Array Method - Reduce
-
-description: What is reduce and how to use it?
-
 previewImage: generic/js-logo.png
-
 categories:
   - Javascript
-
 published: true
 ---
 

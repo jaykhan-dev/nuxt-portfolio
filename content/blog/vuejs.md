@@ -1,10 +1,7 @@
 ---
 title: Designing a VueJS application
-description: What should the code and file structure of a VueJS application look like?
 previewImage: generic/puppeteer-logo.png
-
 published: true
-
 categories:
   - VueJS
   - Javascript
