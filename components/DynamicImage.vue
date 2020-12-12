@@ -6,10 +6,17 @@
       :max-height="imageHeight"
       loading="lazy"
       contain
+      @click="showOverlay = !showOverlay"
     />
     <p v-if="caption" class="my-4 text-center subtitle-1">
       {{ caption }}
     </p>
+    <v-overlay
+      v-if="showOverlay"
+      class="d-flex"
+      @click.native="showOverlay = false"
+      ><v-img class="ma-auto" :src="dynamicImage" max-width="70%"></v-img
+    ></v-overlay>
   </div>
 </template>
 
@@ -32,6 +39,11 @@ export default {
       default: 400,
       required: false,
     },
+  },
+  data() {
+    return {
+      showOverlay: false,
+    }
   },
   computed: {
     dynamicImage() {
