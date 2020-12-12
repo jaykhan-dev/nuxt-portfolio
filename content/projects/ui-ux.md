@@ -1,7 +1,7 @@
 ---
 title: UI/UX Design
 description: Scribendi
-previewImage: slider/.jpg
+previewImage: slider/music-icon.png
 ---
 
 # UI/UX Design
@@ -9,9 +9,3 @@ previewImage: slider/.jpg
 ### Scribendi
 
 www.scribendichina.com
-
-
-
-
-
-
