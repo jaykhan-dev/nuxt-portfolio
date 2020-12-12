@@ -40,7 +40,7 @@ app.listen(3000)
 
 If you were to hit `localhost:3000` you will notice 'Welcome to my app' on the screen. But if you went to your browsers (assuming chrome) Application section in devtools, you will notice under this domain, you will see Cookies.
 
-// INSERT PICTURE HERE
+<dynamic-image filename="auth/cookie1.png"></dynamic-image>
 
 The other thing about cookies is that if they are stored under your domain, they will be sent with every request back to the server for consumption.
 
