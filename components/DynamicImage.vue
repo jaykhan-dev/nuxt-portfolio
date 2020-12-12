@@ -3,7 +3,7 @@
     <v-img
       :src="dynamicImage"
       class="mx-auto"
-      max-height="200"
+      :max-height="imgHeight"
       loading="lazy"
       contain
     />
@@ -26,6 +26,11 @@ export default {
       type: String,
       default: null,
       required: false,
+    },
+    imgHeight: {
+      type: Number,
+      required: false,
+      default: 200,
     },
   },
   computed: {
