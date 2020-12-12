@@ -1,6 +1,6 @@
 ---
 title: Authentication and Authorization
-previewImage: generic/vue-logo.jpg
+previewImage: generic/nodejs-logo.jpg
 categories:
   - NodeJS
 published: true
@@ -23,3 +23,19 @@ Wouldn't it just be easier if when you showed identification they gave you some 
 ## Cookies
 
 Before we go too deep into authentication, we should really explore cookies. They will be an essential part of this discussion.
+
+Since we're exploring this in the context of NodeJS and Express lets spin up a real simple server:
+
+```javascript
+const express = require('express')
+const app = express()
+
+app.get('/', (req, res) => {
+  res.cookie('key', 'value')
+  res.send('Welcome to my app')
+})
+
+app.listen(3000)
+```
+
+If you were to hit `localhost:3000` you will notice 'Welcome to my app' on the screen. But if you went to your browsers (assuming chrome) local
