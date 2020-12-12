@@ -38,4 +38,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.v-image {
+  margin-bottom: 1rem;
+}
+</style>
