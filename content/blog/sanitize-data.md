@@ -1,13 +1,9 @@
 ---
 title: Sanitizing Your Data Objects
-
 description: A safeguard against information coming from the server.
-
 previewImage: generic/vue-logo.jpg
-
 categories:
   - VueJS
-
 published: true
 ---
 

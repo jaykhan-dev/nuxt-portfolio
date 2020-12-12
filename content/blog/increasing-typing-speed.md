@@ -1,6 +1,5 @@
 ---
 title: Increasing Your Typing Speed
-description: How I got my typing speed above 100 WPM
 previewImage: generic/vue-logo.jpg
 categories:
   - Life

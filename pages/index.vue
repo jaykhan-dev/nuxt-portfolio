@@ -37,7 +37,7 @@ export default {
   layout: 'landing',
   data() {
     return {
-      dots: 100,
+      dots: 200,
       windowHeight: 0,
       windowWidth: 0,
     }

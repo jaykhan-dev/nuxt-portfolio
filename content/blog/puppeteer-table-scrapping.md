@@ -1,6 +1,5 @@
 ---
 title: Scrapping Tables With Puppeteer
-description: There is a unique way of scrapping data from tables
 previewImage: generic/puppeteer-logo.png
 published: true
 categories:
