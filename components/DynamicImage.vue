@@ -3,9 +3,9 @@
     <v-img
       :src="dynamicImage"
       class="mx-auto"
-      max-height="400"
+      :max-height="imageHeight"
       loading="lazy"
-      cover
+      contain
     />
     <p v-if="caption" class="my-4 text-center subtitle-1">
       {{ caption }}
@@ -25,6 +25,11 @@ export default {
     caption: {
       type: String,
       default: null,
+      required: false,
+    },
+    imageHeight: {
+      type: Number,
+      default: 400,
       required: false,
     },
   },
