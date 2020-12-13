@@ -46,13 +46,6 @@ export const state = () => ({
         'Joined a ad agency based out of New York, US. An amazing experience that exposed me to many new technologies. Had to come upto speed with Ruby On Rails, VueJS. Also involved with lots of vanilla Javascript while building ad formats. Great experience, will always be indebted to Kenny.',
     },
     {
-      color: 'orange',
-      year: '2020 June',
-      title: 'Redmine',
-      description:
-        'Joined a ad agency based out of New York, US. An amazing experience that exposed me to many new technologies. Had to come upto speed with Ruby On Rails, VueJS. Also involved with lots of vanilla Javascript while building ad formats. Great experience, will always be indebted to Kenny.',
-    },
-    {
       color: 'amber',
       year: '2020 September',
       title: 'Redman Technologies',
