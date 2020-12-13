@@ -36,7 +36,7 @@
     </v-list>
 
     <v-row>
-      <v-col class="d-flex justify-space-around align-end">
+      <v-col class="d-flex justify-space-around align-end mb-2">
         <SocialMedia />
       </v-col>
     </v-row>

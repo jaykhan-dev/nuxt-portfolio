@@ -1,7 +1,7 @@
 <template>
   <v-container class="pa-0">
     <v-row>
-      <v-col cols="12" md="6">
+      <v-col cols="12" md="8">
         <v-row>
           <v-col>
             <p class="text-h3 orange--text">Contact</p>
@@ -39,6 +39,25 @@
       </v-col>
       <v-col>
         <v-row>
+          <v-col>
+            <p class="orange--text text-h4">Contact Info</p>
+            <div class="d-flex">
+              <p class="orange--text">Email</p>
+              <p class="ml-2 white--text font-weight-bold">
+                khanriza@gmail.com
+              </p>
+            </div>
+            <div class="d-flex">
+              <p class="orange--text">Phone</p>
+              <p class="ml-2 white--text font-weight-bold">613-296-2462</p>
+            </div>
+            <div class="d-flex">
+              <p class="orange--text">Location</p>
+              <p class="ml-2 white--text font-weight-bold">Canada</p>
+            </div>
+          </v-col>
+        </v-row>
+        <v-row class="hidden-md-and-up">
           <v-col>
             <p class="orange--text text-h4">Social Media</p>
             <SocialMedia />

@@ -4,9 +4,11 @@
       v-for="(component, index) in components"
       :id="component.name"
       :key="index"
-      style="height: 100vh; background-size: cover;"
+      style="background-size: cover;"
       :style="{
         backgroundImage: `url(${component.img ? component.img : ''})`,
+        background: component.gradient,
+        height: component.height,
       }"
       :class="component.bgColor"
       fluid
