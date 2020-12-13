@@ -1,5 +1,22 @@
 <template>
-  <v-card class="mx-0 sticky" max-width="800" tile>
+  <div>
+    <template>
+      <v-list-item two-line>
+        <v-list-item-content class="pb-5 text-center">
+          <v-list-item-title class="orange--text display-2"
+            >Riza Khan</v-list-item-title
+          >
+          <v-list-item-subtitle class="text-h6 font-weight-light white--text"
+            >Front-End Developer</v-list-item-subtitle
+          >
+        </v-list-item-content>
+      </v-list-item>
+      <v-list-item>
+        <v-list-item-content class="pb-5 text-center">
+          <v-btn class="orange" to="/blog">Back</v-btn>
+        </v-list-item-content>
+      </v-list-item>
+    </template>
     <v-list nav dense>
       <v-subheader>Table Of Contents</v-subheader>
       <v-list-item-group v-if="toc" color="primary">
@@ -13,8 +30,36 @@
           </v-list-item>
         </NuxtLink>
       </v-list-item-group>
+      <v-subheader>Related Articles</v-subheader>
+      <v-list-item-group v-if="toc" color="primary">
+        <NuxtLink
+          v-if="prev"
+          :to="{ name: 'blog-slug', params: { slug: prev.slug } }"
+          class="white-text"
+        >
+          <v-list-item>
+            <v-list-item-content>
+              <v-list-item-title>
+                {{ prev.title }}
+              </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </NuxtLink>
+        <NuxtLink
+          v-if="next"
+          :to="{ name: 'blog-slug', params: { slug: next.slug } }"
+        >
+          <v-list-item>
+            <v-list-item-content>
+              <v-list-item-title>
+                {{ next.title }}
+              </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </NuxtLink>
+      </v-list-item-group>
     </v-list>
-  </v-card>
+  </div>
 </template>
 
 <script>
@@ -23,6 +68,16 @@ export default {
     toc: {
       type: Array,
       required: true,
+    },
+    prev: {
+      type: Object,
+      required: false,
+      default: null,
+    },
+    next: {
+      type: Object,
+      required: false,
+      default: null,
     },
   },
 }
