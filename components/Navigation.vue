@@ -18,7 +18,7 @@
           (component) => component.name != 'Name'
         )"
         :key="index"
-        :to="`#${component.name}`"
+        :to="path === '/' ? `#${component.name}` : '/'"
       >
         <v-list-item>
           <v-list-item-content>
@@ -28,6 +28,20 @@
                 depressed
                 class="text-capitalize font-weight-light grey darken-4"
                 >{{ component.name }}</v-btn
+              ></v-list-item-title
+            >
+          </v-list-item-content>
+        </v-list-item>
+      </NuxtLink>
+      <NuxtLink to="/blog">
+        <v-list-item>
+          <v-list-item-content>
+            <v-list-item-title
+              ><v-btn
+                block
+                depressed
+                class="text-capitalize font-weight-light grey darken-4"
+                >Blog</v-btn
               ></v-list-item-title
             >
           </v-list-item-content>
@@ -58,6 +72,9 @@ export default {
     ...mapState({
       components: (state) => state.user.components,
     }),
+    path() {
+      return this.$route.path
+    },
   },
 }
 </script>

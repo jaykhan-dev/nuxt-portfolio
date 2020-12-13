@@ -9,7 +9,7 @@
         </v-row>
         <v-row>
           <v-col>
-            <p class="text-headline white--text">
+            <p class="text-body-2 white--text">
               If you have a project in mind please don't hesitate to reach out!
             </p>
           </v-col>
@@ -41,19 +41,19 @@
         <v-row>
           <v-col>
             <p class="orange--text text-h4">Contact Info</p>
-            <div class="d-flex">
+            <div class="d-flex text-body-2">
               <p class="orange--text">Email</p>
-              <p class="ml-2 white--text font-weight-bold">
+              <p class="ml-2 white--text">
                 khanriza@gmail.com
               </p>
             </div>
-            <div class="d-flex">
+            <div class="d-flex text-body-2">
               <p class="orange--text">Phone</p>
-              <p class="ml-2 white--text font-weight-bold">613-296-2462</p>
+              <p class="ml-2 white--text">613-296-2462</p>
             </div>
-            <div class="d-flex">
+            <div class="d-flex text-body-2">
               <p class="orange--text">Location</p>
-              <p class="ml-2 white--text font-weight-bold">Canada</p>
+              <p class="ml-2 white--text">Canada</p>
             </div>
           </v-col>
         </v-row>

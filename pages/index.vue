@@ -19,19 +19,19 @@
 </template>
 
 <script>
-import Jobs from '@/components/profile/Jobs'
+import About from '@/components/profile/About'
 import Name from '@/components/profile/Name'
-import Skills from '@/components/profile/Skills'
-import ContactForm from '@/components/profile/ContactForm'
+import History from '@/components/profile/History'
+import Contact from '@/components/profile/Contact'
 import { mapState } from 'vuex'
 
 export default {
   layout: 'default',
   components: {
-    Jobs,
+    About,
     Name,
-    Skills,
-    ContactForm,
+    History,
+    Contact,
   },
   data() {
     return {}
