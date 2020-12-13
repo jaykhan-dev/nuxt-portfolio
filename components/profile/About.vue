@@ -24,10 +24,10 @@
           <p class="orange--text text-h3">What I can do:</p>
           <v-expansion-panels accordion>
             <v-expansion-panel v-for="(skill, i) in skills" :key="i">
-              <v-expansion-panel-header>{{
+              <v-expansion-panel-header class="text-h6 font-weight-thin">{{
                 skill.title
               }}</v-expansion-panel-header>
-              <v-expansion-panel-content>
+              <v-expansion-panel-content class="text-body-2">
                 {{ skill.description }}
               </v-expansion-panel-content>
             </v-expansion-panel>

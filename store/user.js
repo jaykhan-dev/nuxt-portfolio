@@ -1,4 +1,5 @@
 export const state = () => ({
+  projects: [],
   components: [
     {
       name: 'Name',
@@ -11,6 +12,7 @@ export const state = () => ({
         'linear-gradient(66deg, rgba(33,33,33,1) 25%, rgba(66,66,66,1) 25%, rgba(66,66,66,1) 90%, rgba(18,18,18,1) 90%);',
     },
     { name: 'History', bgColor: 'grey darken-4' },
+    { name: 'Projects', bgColor: 'grey darken-4' },
     {
       name: 'Contact',
     },
@@ -84,16 +86,7 @@ export const state = () => ({
 })
 
 export const mutations = {
-  add(state, text) {
-    state.list.push({
-      text,
-      done: false,
-    })
-  },
-  remove(state, { todo }) {
-    state.list.splice(state.list.indexOf(todo), 1)
-  },
-  toggle(state, todo) {
-    todo.done = !todo.done
+  addProjects(state, payload) {
+    state.projects = payload
   },
 }

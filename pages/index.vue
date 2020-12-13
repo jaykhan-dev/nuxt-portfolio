@@ -23,6 +23,7 @@ import About from '@/components/profile/About'
 import Name from '@/components/profile/Name'
 import History from '@/components/profile/History'
 import Contact from '@/components/profile/Contact'
+import Projects from '@/components/profile/Projects'
 import { mapState } from 'vuex'
 
 export default {
@@ -32,6 +33,22 @@ export default {
     Name,
     History,
     Contact,
+    Projects,
+  },
+  async asyncData({ $content, params, store }) {
+    const projects = await $content('projects', params.slug)
+      .only([
+        'title',
+        'updatedAt',
+        'slug',
+        'previewImage',
+        'categories',
+        'description',
+      ])
+      .sortBy('updatedAt', 'desc')
+      .fetch()
+
+    store.commit('user/addProjects', projects)
   },
   data() {
     return {}
