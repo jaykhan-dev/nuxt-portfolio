@@ -3,35 +3,21 @@
     <v-row>
       <v-col cols="12" md="8">
         <v-row>
-          <v-col>
-            <p class="text-h3 orange--text">Contact</p>
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-col>
-            <p class="text-body-2 white--text">
-              If you have a project in mind please don't hesitate to reach out!
-            </p>
-          </v-col>
-        </v-row>
-        <v-row>
           <v-col cols="12">
+            <p class="text-h6 orange--text">Send me a message:</p>
             <form name="contact" method="POST" data-netlify="true">
-              <v-text-field
-                type="text"
-                name="name"
-                label="Name"
-                outlined
-              ></v-text-field>
+              <v-text-field type="text" name="name" label="Name"></v-text-field>
               <v-text-field
                 type="email"
                 name="email"
                 label="Email"
-                outlined
+                solid
               ></v-text-field>
-              <v-textarea name="message" label="Message" outlined></v-textarea>
+              <v-textarea name="message" label="Message"></v-textarea>
               <v-row>
-                <v-btn type="submit" class="orange ml-auto mr-3">Send</v-btn>
+                <v-btn type="submit" class="orange ml-auto mr-3"
+                  >Contact Me</v-btn
+                >
               </v-row>
             </form>
           </v-col>
@@ -40,20 +26,20 @@
       <v-col>
         <v-row>
           <v-col>
-            <p class="orange--text text-h4">Contact Info</p>
-            <div class="d-flex text-body-2">
-              <p class="orange--text">Email</p>
-              <p class="ml-2 white--text">
+            <p class="orange--text text-h6">Contact Info</p>
+            <div class="d-flex">
+              <p class="orange--text text-body-2">Email</p>
+              <p class="ml-2 white--text text-body-2">
                 khanriza@gmail.com
               </p>
             </div>
-            <div class="d-flex text-body-2">
-              <p class="orange--text">Phone</p>
-              <p class="ml-2 white--text">613-296-2462</p>
+            <div class="d-flex">
+              <p class="orange--text text-body-2">Phone</p>
+              <p class="ml-2 white--text text-body-2">613-296-2462</p>
             </div>
-            <div class="d-flex text-body-2">
-              <p class="orange--text">Location</p>
-              <p class="ml-2 white--text">Canada</p>
+            <div class="d-flex">
+              <p class="orange--text text-body-2">Location</p>
+              <p class="ml-2 white--text text-body-2">Canada</p>
             </div>
           </v-col>
         </v-row>
