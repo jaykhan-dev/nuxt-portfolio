@@ -1,7 +1,12 @@
 <template>
   <v-container>
+    <v-row class="hidden-lg-and-up">
+      <v-col cols="12" md="6" lg="6">
+        <v-btn to="/" class="orange">Back Home</v-btn>
+      </v-col>
+    </v-row>
     <v-row>
-      <v-col cols="12" md="6" lg="3">
+      <v-col cols="12" md="6" lg="6">
         <v-text-field
           v-model="searchQuery"
           outlined
