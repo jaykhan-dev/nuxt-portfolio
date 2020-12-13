@@ -27,7 +27,6 @@ export default {
     filename: {
       type: String,
       default: null,
-      required: false,
     },
     caption: {
       type: String,
@@ -47,9 +46,7 @@ export default {
   },
   computed: {
     dynamicImage() {
-      return this.filename
-        ? require(`~/assets/images/${this.filename}`)
-        : '/vuetify-logo.svg'
+      return require(`~/assets/images/${this.filename}`)
     },
   },
 }
