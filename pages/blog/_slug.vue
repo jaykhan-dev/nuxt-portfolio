@@ -9,6 +9,8 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   layout: 'article',
   async asyncData({ $content, params, redirect, store }) {
@@ -24,11 +26,14 @@ export default {
     if (!doc.published) {
       redirect('/blog')
     }
-
     store.commit('blog/SET_BLOG', doc)
     store.commit('blog/SET_NEXT', next)
     store.commit('blog/SET_PREV', prev)
-    return { doc }
+  },
+  computed: {
+    ...mapState({
+      doc: (state) => state.blog.blog,
+    }),
   },
 }
 </script>

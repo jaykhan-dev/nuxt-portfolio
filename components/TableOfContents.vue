@@ -18,9 +18,9 @@
       </v-list-item>
     </template>
     <v-list nav dense>
-      <v-subheader v-if="toc">Table Of Contents</v-subheader>
-      <v-list-item-group v-if="toc" color="primary">
-        <NuxtLink v-for="(item, i) in toc" :key="i" :to="`#${item.id}`">
+      <v-subheader v-if="doc.toc">Table Of Contents</v-subheader>
+      <v-list-item-group v-if="doc.toc" color="primary">
+        <NuxtLink v-for="(item, i) in doc.toc" :key="i" :to="`#${item.id}`">
           <v-list-item>
             <v-list-item-content>
               <v-list-item-title :class="item.depth === 3 ? 'ml-3' : ''">
@@ -30,18 +30,10 @@
           </v-list-item>
         </NuxtLink>
       </v-list-item-group>
-      <v-subheader
-        v-if="
-          !Object.keys(prev).length === 0 || !Object.keys(next).length === 0
-        "
+      <v-subheader v-if="$route.name === 'blog-slug'"
         >Related Articles</v-subheader
       >
-      <v-list-item-group
-        v-if="
-          !Object.keys(prev).length === 0 || !Object.keys(next).length === 0
-        "
-        color="primary"
-      >
+      <v-list-item-group v-if="$route.name === 'blog-slug'" color="primary">
         <NuxtLink
           v-if="prev"
           :to="{ name: 'blog-slug', params: { slug: prev.slug } }"
@@ -74,20 +66,25 @@
 
 <script>
 export default {
-  props: {
-    toc: {
-      type: Array,
-      required: true,
+  computed: {
+    doc() {
+      return this.$route.name === 'blog-slug'
+        ? this.$store.state.blog.blog
+        : this.$store.state.project.project
     },
-    prev: {
-      type: Object,
-      required: false,
-      default: null,
+    prev() {
+      if (this.$route.name === 'blog-slug') {
+        return this.$store.state.blog.prev
+      } else {
+        return null
+      }
     },
-    next: {
-      type: Object,
-      required: false,
-      default: null,
+    next() {
+      if (this.$route.name === 'blog-slug') {
+        return this.$store.state.blog.next
+      } else {
+        return null
+      }
     },
   },
   methods: {
