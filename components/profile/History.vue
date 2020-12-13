@@ -1,5 +1,5 @@
 <template>
-  <v-timeline>
+  <v-timeline class="my-5">
     <v-timeline-item
       v-for="(date, i) in history"
       :key="i"

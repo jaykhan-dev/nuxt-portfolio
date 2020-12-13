@@ -49,6 +49,11 @@
             <SocialMedia />
           </v-col>
         </v-row>
+        <v-row class="hidden-lg-and-up">
+          <v-col>
+            <v-btn class="orange" to="/blog">Blog</v-btn>
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
   </v-container>
