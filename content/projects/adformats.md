@@ -42,8 +42,7 @@ Love simple advertisements, they really accentuate the issue at hand and don't t
 <dynamic-image filename="adformats/funder-raiser-with-image.png"></dynamic-image>
 
 ### Social Media
+
 A simple advertisement, very minimalist with lots of empty space. These types are advertisements are my favorite.
 
 <dynamic-image filename="adformats/social-media.png"></dynamic-image>
-
-
