@@ -30,7 +30,8 @@ Here is the minimum HTML you will need:
 ```
 
 Believe it or not, that is all you need. There are additional components we can add (ie, navigation buttons), but we won't worry about that complexity for the time being.
-<img src="~/assets/images/slider.png">
+
+<dynamic-image filename="slider/slider.png"></dynamic-image>
 
 ## CSS
 
