@@ -1,13 +1,14 @@
 <template>
   <v-row>
     <v-col cols="12">
-      <h2 class="ma-0">Categories</h2>
+      <h2 class="orange--text text-h6 font-weight-light">Categories</h2>
     </v-col>
     <v-col cols="12">
       <v-btn
         v-for="(category, index) in categories"
         :key="index"
-        class="ma-1"
+        class="ma-1 orange--text"
+        small
         :class="selectedCategory === category ? 'primary' : ''"
         @click="selectCategory(category)"
       >
