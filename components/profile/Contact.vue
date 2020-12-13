@@ -43,9 +43,9 @@
             </div>
           </v-col>
         </v-row>
-        <v-row class="hidden-md-and-up">
+        <v-row class="hidden-lg-and-up">
           <v-col>
-            <p class="orange--text text-h4">Social Media</p>
+            <p class="orange--text text-h6">Social Media</p>
             <SocialMedia />
           </v-col>
         </v-row>
