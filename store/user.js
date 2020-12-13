@@ -16,9 +16,12 @@ export const state = () => ({
     },
   ],
   socialMedia: [
-    { name: 'twitter', link: 'https://www.google.com' },
-    { name: 'linkedin', link: '#' },
-    { name: 'github', link: '#' },
+    { name: 'earth', link: 'https://www.upwork.com/fl/rizakhan2?viewMode=1' },
+    {
+      name: 'linkedin',
+      link: 'https://www.linkedin.com/in/riza-khan-68499b193/',
+    },
+    { name: 'github', link: 'https://github.com/RizaHKhan' },
   ],
   history: [
     {
