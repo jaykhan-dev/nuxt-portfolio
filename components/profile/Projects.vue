@@ -18,7 +18,9 @@
             :to="{ name: 'projects-slug', params: { slug: project.slug } }"
           >
             <v-card :class="{ grow: hover }" class="mx-auto" max-width="600">
-              <dynamic-image :filename="project.previewImage"></dynamic-image>
+              <v-img
+                :src="require(`~/assets/images/${project.previewImage}`)"
+              ></v-img>
               <v-card-title class="text-h5 font-weight-light orange--text">{{
                 project.title
               }}</v-card-title>
