@@ -13,12 +13,12 @@
       </v-list-item>
       <v-list-item>
         <v-list-item-content class="pb-5 text-center">
-          <v-btn class="orange" to="/blog">Back</v-btn>
+          <v-btn class="orange" @click="goBack">Back</v-btn>
         </v-list-item-content>
       </v-list-item>
     </template>
     <v-list nav dense>
-      <v-subheader>Table Of Contents</v-subheader>
+      <v-subheader v-if="toc">Table Of Contents</v-subheader>
       <v-list-item-group v-if="toc" color="primary">
         <NuxtLink v-for="(item, i) in toc" :key="i" :to="`#${item.id}`">
           <v-list-item>
@@ -30,8 +30,18 @@
           </v-list-item>
         </NuxtLink>
       </v-list-item-group>
-      <v-subheader>Related Articles</v-subheader>
-      <v-list-item-group v-if="toc" color="primary">
+      <v-subheader
+        v-if="
+          !Object.keys(prev).length === 0 || !Object.keys(next).length === 0
+        "
+        >Related Articles</v-subheader
+      >
+      <v-list-item-group
+        v-if="
+          !Object.keys(prev).length === 0 || !Object.keys(next).length === 0
+        "
+        color="primary"
+      >
         <NuxtLink
           v-if="prev"
           :to="{ name: 'blog-slug', params: { slug: prev.slug } }"
@@ -78,6 +88,11 @@ export default {
       type: Object,
       required: false,
       default: null,
+    },
+  },
+  methods: {
+    goBack() {
+      this.$router.back()
     },
   },
 }

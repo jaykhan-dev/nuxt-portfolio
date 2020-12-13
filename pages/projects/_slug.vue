@@ -1,10 +1,7 @@
 <template>
   <v-container>
     <v-row>
-      <v-col cols="12" md="5" lg="3">
-        <TableOfContents :toc="doc.toc" />
-      </v-col>
-      <v-col cols="12" md="6" lg="9">
+      <v-col cols="12">
         <nuxt-content :document="doc" />
       </v-col>
     </v-row>
@@ -12,14 +9,11 @@
 </template>
 
 <script>
-import TableOfContents from '@/components/TableOfContents'
-
 export default {
-  components: {
-    TableOfContents,
-  },
-  async asyncData({ $content, params }) {
+  layout: 'article',
+  async asyncData({ $content, params, store }) {
     const doc = await $content('projects', params.slug).fetch()
+    store.commit('project/SET_PROJECT', doc)
     return { doc }
   },
 }

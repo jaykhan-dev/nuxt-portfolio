@@ -24,10 +24,14 @@ export default {
   data: () => ({ drawer: null }),
   computed: {
     ...mapState({
-      doc: (state) => state.blog.blog,
       prev: (state) => state.blog.prev,
       next: (state) => state.blog.next,
     }),
+    doc() {
+      return this.$route.name === 'blog-slug'
+        ? this.$store.state.blog.blog
+        : this.$store.state.project.project
+    },
   },
 }
 </script>
