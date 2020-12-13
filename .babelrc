@@ -10,7 +10,9 @@
             }
           }
         ]
-      ]
+      ],
+      "plugins": ["@babel/transform-runtime"],
+      "comments": false
     }
   }
 }

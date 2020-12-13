@@ -1,73 +1,45 @@
 <template>
-  <v-container fill-height>
-    <v-row>
-      <v-col cols="12" md="8" offset-md="1" lg="5" offset-lg="2">
-        <h1 class="display-4 white--text">Riza Khan</h1>
-        <p class="subtitle-1 pl-2">Web Developer</p>
-        <v-row class="pl-4">
-          <nuxt-link outlined tile class="btn mt-4" to="/projects"
-            >Past Projects</nuxt-link
-          >
-        </v-row>
-        <v-row class="pl-4">
-          <nuxt-link tile class="btn mt-4" to="/blog">Blog</nuxt-link>
-        </v-row>
-        <v-row class="pl-4">
-          <nuxt-link tile class="btn mt-4" to="/contact">Contact</nuxt-link>
-        </v-row>
-      </v-col>
-    </v-row>
-    <Dot
-      v-for="dot in dots"
-      :key="dot"
-      :x="windowHeight * 0.5"
-      :y="windowWidth * 0.5"
-      :r="randomNumber(0, 4)"
-      :o="randomNumber(0, 1)"
-    />
-  </v-container>
+  <div>
+    <v-container
+      v-for="(component, index) in components"
+      :id="component.name"
+      :key="index"
+      style="height: 100vh; background-size: cover;"
+      :style="{
+        backgroundImage: `url(${component.img ? component.img : ''})`,
+      }"
+      :class="component.bgColor"
+      fluid
+    >
+      <component :is="component.name"></component>
+    </v-container>
+  </div>
 </template>
 
 <script>
-import Dot from '@/components/Dot'
+import Jobs from '@/components/profile/Jobs'
+import Name from '@/components/profile/Name'
+import Skills from '@/components/profile/Skills'
+import ContactForm from '@/components/profile/ContactForm'
+import { mapState } from 'vuex'
+
 export default {
+  layout: 'default',
   components: {
-    Dot,
+    Jobs,
+    Name,
+    Skills,
+    ContactForm,
   },
-  layout: 'landing',
   data() {
-    return {
-      dots: 200,
-      windowHeight: 0,
-      windowWidth: 0,
-    }
+    return {}
   },
-  mounted() {
-    this.windowHeight = window.innerHeight
-    this.windowWidth = window.innerWidth
-  },
-  methods: {
-    randomNumber(min, max) {
-      return Math.random() * (max - min) + min
-    },
+  computed: {
+    ...mapState({
+      components: (state) => state.user.components,
+    }),
   },
 }
 </script>
 
-<style lang="scss" scoped>
-.btn {
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  background: gray;
-  transition: all 0.5s ease;
-  color: white;
-
-  &:hover {
-    background: white;
-    color: black;
-  }
-}
-</style>
+<style lang="scss" scoped></style>

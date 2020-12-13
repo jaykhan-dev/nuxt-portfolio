@@ -1,16 +1,11 @@
 <template>
-  <v-app dark>
+  <v-app>
     <Navigation />
     <v-main>
-      <v-container class="mt-15">
+      <v-container class="pa-0" fluid>
         <nuxt />
       </v-container>
     </v-main>
-    <v-footer>
-      <span class="mx-auto"
-        >Riza Khan &copy; {{ new Date().getFullYear() }}</span
-      >
-    </v-footer>
   </v-app>
 </template>
 
@@ -23,3 +18,4 @@ export default {
   },
 }
 </script>
+<style lang="scss"></style>

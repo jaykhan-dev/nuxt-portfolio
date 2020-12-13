@@ -1,65 +1,75 @@
 <template>
-  <div>
-    <v-app-bar fixed width="100%">
-      <v-toolbar-title>
-        <v-row>
-          <v-col>
-            <nuxt-link to="/" class="white--text">Riza Khan</nuxt-link>
-          </v-col>
-          <v-col class="hidden-sm-and-down">
-            <span>|</span>
-          </v-col>
-          <v-col class="hidden-sm-and-down">
-            <span>Web Developer</span>
-          </v-col>
-        </v-row>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        v-for="(location, index) in locations"
+  <v-navigation-drawer app class="py-1 grey darken-4">
+    <template v-slot:prepend>
+      <v-list-item two-line>
+        <v-list-item-content class="pb-5 text-center">
+          <v-list-item-title class="orange--text display-2"
+            >Riza Khan</v-list-item-title
+          >
+          <v-list-item-subtitle class="text-h6 font-weight-light white--text"
+            >Front-End Developer</v-list-item-subtitle
+          >
+        </v-list-item-content>
+      </v-list-item>
+    </template>
+    <v-list dense>
+      <NuxtLink
+        v-for="(component, index) in components.filter(
+          (component) => component.name != 'Name'
+        )"
         :key="index"
-        :to="location.link"
-        class="mx-2 white black--text hidden-sm-and-down"
-        tile
-        >{{ location.name }}</v-btn
+        :to="`#${component.name}`"
       >
-      <v-menu bottom left>
-        <template v-slot:activator="{ on, attrs }">
-          <v-btn dark icon v-bind="attrs" class="hidden-md-and-up" v-on="on">
-            <v-icon>mdi-dots-vertical</v-icon>
-          </v-btn>
-        </template>
+        <v-list-item>
+          <v-list-item-content>
+            <v-list-item-title
+              ><v-btn
+                block
+                depressed
+                class="text-capitalize font-weight-light grey darken-4"
+                >{{ component.name }}</v-btn
+              ></v-list-item-title
+            >
+          </v-list-item-content>
+        </v-list-item>
+      </NuxtLink>
+    </v-list>
 
-        <v-list>
-          <v-list-item v-for="(location, index) in locations" :key="index">
-            <v-list-item-title>
-              <v-btn :to="location.link" class="mx-2 white black--text" tile>{{
-                location.name
-              }}</v-btn>
-            </v-list-item-title>
-          </v-list-item>
-        </v-list>
-      </v-menu>
-    </v-app-bar>
-  </div>
+    <v-row>
+      <v-col class="d-flex justify-space-around align-end">
+        <SocialMedia />
+      </v-col>
+    </v-row>
+  </v-navigation-drawer>
 </template>
 
 <script>
+import SocialMedia from '@/components/SocialMedia'
+
+import { mapState } from 'vuex'
 export default {
+  components: {
+    SocialMedia,
+  },
   data() {
-    return {
-      drawer: false,
-      locations: [
-        { name: 'Past Projects', link: '/projects' },
-        { name: 'Contact', link: '/contact' },
-        { name: 'Blog', link: '/blog' },
-      ],
-    }
+    return {}
+  },
+  computed: {
+    ...mapState({
+      components: (state) => state.user.components,
+    }),
   },
 }
 </script>
 
-<style scoped>
+<style lang="scss">
+.v-navigation-drawer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 a {
   text-decoration: none;
 }
