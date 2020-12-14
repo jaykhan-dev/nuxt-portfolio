@@ -5,9 +5,12 @@ previewImage: slider/ui-ux.svg
 ---
 
 # UI/UX Design
+The following designs were made with Adobe XD, and Illustrator.  My design philosophy for User Experience   
+
 
 ### Scribendi (2018-2019)
-The following designs were made with Adobe XD, and Illustrator.  My design philosophy for User Experience   
+#### test
+  
 <dynamic-image filename="scribendi/ui-ux-3.png" :img-height="800"></dynamic-image>
 <dynamic-image filename="scribendi/ui-ux-5.png" :img-height="800"></dynamic-image>
 <dynamic-image filename="scribendi/ui-ux-2.png" :img-height="1600"></dynamic-image>
