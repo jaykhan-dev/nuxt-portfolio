@@ -11,7 +11,6 @@
                 type="email"
                 name="email"
                 label="Email"
-                solid
               ></v-text-field>
               <v-textarea name="message" label="Message"></v-textarea>
               <v-row>
