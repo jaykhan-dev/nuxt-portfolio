@@ -20,7 +20,7 @@
             </p>
           </v-col>
         </v-row>
-        <!-- <v-row>
+        <v-row>
           <p class="orange--text text-h3">What I can do:</p>
           <v-expansion-panels accordion>
             <v-expansion-panel v-for="(skill, i) in skills" :key="i">
@@ -32,7 +32,7 @@
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
-        </v-row> -->
+        </v-row>
       </v-col>
     </v-row>
   </v-container>
