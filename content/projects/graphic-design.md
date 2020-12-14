@@ -22,9 +22,9 @@ previewImage: slider/music-icon.png
 
 <dynamic-image filename="rampart/canadaday.jpg" :img-height="600"></dynamic-image>
 <dynamic-image filename="rampart/4july.JPG" :img-height="600"></dynamic-image>
-<dynamic-image filename="rampart/fathersday.jpg" :img-height="600"></dynamic-image>
-<dynamic-image filename="rampart/glock.jpg" :img-height="600"></dynamic-image>
-<dynamic-image filename="rampart/ammo.jpg" :img-height="600"></dynamic-image>
-<dynamic-image filename="rampart/spiritus.jpg" :img-height="600"></dynamic-image>
-<dynamic-image filename="rampart/troy.jpg" :img-height="600"></dynamic-image>
+<dynamic-image filename="rampart/fathersday.JPG" :img-height="600"></dynamic-image>
+<dynamic-image filename="rampart/glock.JPG" :img-height="600"></dynamic-image>
+<dynamic-image filename="rampart/ammo.JPG" :img-height="600"></dynamic-image>
+<dynamic-image filename="rampart/spiritus.JPG" :img-height="600"></dynamic-image>
+<dynamic-image filename="rampart/troy.JPG" :img-height="600"></dynamic-image>
 <dynamic-image filename="rampart/asp.jpg" :img-height="400"></dynamic-image>
