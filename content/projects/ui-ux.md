@@ -8,11 +8,11 @@ previewImage: slider/ui-ux.svg
 
 ### Scribendi (2018-2019)
 
-<dynamic-image filename="scribendi/ui-ux3.PNG" :img-height="800"></dynamic-image>
-<dynamic-image filename="scribendi/ui-ux5.PNG" :img-height="800"></dynamic-image>
-<dynamic-image filename="scribendi/ui-ux2.PNG" :img-height="800"></dynamic-image>
-<dynamic-image filename="scribendi/ui-ux4.PNG" :img-height="800"></dynamic-image>
-<dynamic-image filename="scribendi/ui-ux5.PNG" :img-height="800"></dynamic-image>
+<dynamic-image filename="scribendi/ui-ux-3.PNG" :img-height="800"></dynamic-image>
+<dynamic-image filename="scribendi/ui-ux-5.PNG" :img-height="800"></dynamic-image>
+<dynamic-image filename="scribendi/ui-ux-2.PNG" :img-height="800"></dynamic-image>
+<dynamic-image filename="scribendi/ui-ux-4.PNG" :img-height="800"></dynamic-image>
+<dynamic-image filename="scribendi/ui-ux-5.PNG" :img-height="800"></dynamic-image>
 
 ### Scribendi China (2019)
 
