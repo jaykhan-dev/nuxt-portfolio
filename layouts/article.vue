@@ -4,7 +4,10 @@
       <TableOfContents />
     </v-navigation-drawer>
     <v-app-bar app class="hidden-lg-and-up">
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon
+        class="orange--text"
+        @click="drawer = !drawer"
+      ></v-app-bar-nav-icon>
     </v-app-bar>
     <v-main>
       <v-container>
