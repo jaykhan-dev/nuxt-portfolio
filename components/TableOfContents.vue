@@ -18,7 +18,9 @@
       </v-list-item>
     </template>
     <v-list nav dense>
-      <v-subheader v-if="doc.toc">Table Of Contents</v-subheader>
+      <v-subheader v-if="doc.toc" class="orange--text"
+        >Table Of Contents</v-subheader
+      >
       <v-list-item-group v-if="doc.toc" color="primary">
         <NuxtLink v-for="(item, i) in doc.toc" :key="i" :to="`#${item.id}`">
           <v-list-item>
@@ -30,7 +32,7 @@
           </v-list-item>
         </NuxtLink>
       </v-list-item-group>
-      <v-subheader v-if="$route.name === 'blog-slug'"
+      <v-subheader v-if="$route.name === 'blog-slug'" class="orange--text"
         >Related Articles</v-subheader
       >
       <v-list-item-group v-if="$route.name === 'blog-slug'" color="primary">
