@@ -11,9 +11,9 @@ export const state = () => ({
     },
     { name: 'History', bgColor: 'grey darken-4' },
     { name: 'Projects', bgColor: 'grey darken-4' },
-    // {
-    //   name: 'Contact',
-    // },
+    {
+      name: 'Contact',
+    },
   ],
   socialMedia: [
     { name: 'earth', link: 'https://www.upwork.com/fl/rizakhan2?viewMode=1' },

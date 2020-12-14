@@ -23,7 +23,7 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col>
+      <!-- <v-col>
         <v-row>
           <v-col>
             <p class="orange--text text-h6">Contact Info</p>
@@ -52,7 +52,7 @@
             <NuxtLink to="/blog"><v-btn class="orange">Blog</v-btn></NuxtLink>
           </v-col>
         </v-row>
-      </v-col>
+      </v-col> -->
     </v-row>
   </v-container>
 </template>
