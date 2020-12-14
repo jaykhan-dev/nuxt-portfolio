@@ -41,12 +41,12 @@
             </div>
           </v-col>
         </v-row>
-        <!-- <v-row class="hidden-lg-and-up">
+        <v-row class="hidden-lg-and-up">
           <v-col>
             <p class="orange--text text-h6">Social Media</p>
             <SocialMedia />
           </v-col>
-        </v-row> -->
+        </v-row>
         <v-row class="hidden-lg-and-up">
           <v-col>
             <NuxtLink to="/blog"><v-btn class="orange">Blog</v-btn></NuxtLink>
@@ -58,13 +58,11 @@
 </template>
 
 <script>
-// import SocialMedia from '@/components/SocialMedia'
+import SocialMedia from '@/components/SocialMedia'
 
 export default {
   components: {
-    // SocialMedia,
+    SocialMedia,
   },
 }
 </script>
-
-<style scoped></style>
