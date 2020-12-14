@@ -7,7 +7,7 @@
       loading="lazy"
       contain
       @click="showOverlay = !showOverlay"
-    />
+    ></v-img>
     <p v-if="caption" class="my-4 text-center subtitle-1">
       {{ caption }}
     </p>
