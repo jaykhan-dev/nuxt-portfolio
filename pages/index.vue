@@ -1,10 +1,10 @@
 <template>
   <div>
-    <!-- <v-container
+    <v-container
       v-for="(component, index) in components"
       :id="component.name"
       :key="index"
-      style="background-size: cover;"
+      style="background-size: cover"
       :style="{
         backgroundImage: `url(${component.img ? component.img : ''})`,
         height: component.height,
@@ -13,21 +13,6 @@
       fluid
     >
       <component :is="component.name"></component>
-    </v-container> -->
-    <v-container>
-      <Name />
-    </v-container>
-    <v-container>
-      <About />
-    </v-container>
-    <v-container>
-      <History />
-    </v-container>
-    <v-container>
-      <Projects />
-    </v-container>
-    <v-container>
-      <Contact />
     </v-container>
   </div>
 </template>
@@ -41,7 +26,6 @@ import Projects from '@/components/profile/Projects'
 import { mapState } from 'vuex'
 
 export default {
-  layout: 'default',
   components: {
     About,
     Name,
@@ -49,6 +33,7 @@ export default {
     Contact,
     Projects,
   },
+  layout: 'default',
   async asyncData({ $content, params, store }) {
     const projects = await $content('projects', params.slug)
       .only([
