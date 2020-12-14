@@ -7,7 +7,6 @@
       style="background-size: cover;"
       :style="{
         backgroundImage: `url(${component.img ? component.img : ''})`,
-        background: component.gradient,
         height: component.height,
       }"
       :class="component.bgColor"

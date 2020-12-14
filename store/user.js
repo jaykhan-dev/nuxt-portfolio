@@ -8,8 +8,6 @@ export const state = () => ({
     },
     {
       name: 'About',
-      gradient:
-        'linear-gradient(66deg, rgba(33,33,33,1) 25%, rgba(66,66,66,1) 25%, rgba(66,66,66,1) 90%, rgba(18,18,18,1) 90%);',
     },
     { name: 'History', bgColor: 'grey darken-4' },
     { name: 'Projects', bgColor: 'grey darken-4' },
