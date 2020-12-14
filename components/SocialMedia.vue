@@ -6,7 +6,7 @@
       :href="media.link"
       target="_blank"
     >
-      <v-icon color="white darken-2" class="mr-sm-3 mx-md-3">
+      <v-icon color="white darken-2" class="mx-3">
         mdi-{{ media.name }}
       </v-icon>
     </a>
