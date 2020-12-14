@@ -13,7 +13,7 @@
         md="6"
         lg="4"
       >
-        <v-hover v-slot:default="{ hover }">
+        <v-hover v-slot="{ hover }">
           <NuxtLink
             :to="{ name: 'projects-slug', params: { slug: project.slug } }"
           >
@@ -28,7 +28,7 @@
                 <p class="text-body-2">{{ project.description }}</p>
               </v-card-text>
               <v-card-actions>
-                <v-btn class="orange">Read More</v-btn>
+                <v-btn class="orange black--text">Read More</v-btn>
               </v-card-actions>
             </v-card>
           </NuxtLink>

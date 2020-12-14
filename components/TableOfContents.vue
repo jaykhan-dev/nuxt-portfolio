@@ -12,7 +12,7 @@
     </v-list-item>
     <v-list-item>
       <v-list-item-content class="pb-5 text-center">
-        <v-btn class="orange" @click="goBack">Back</v-btn>
+        <v-btn class="orange black--text" @click="goBack">Back</v-btn>
       </v-list-item-content>
     </v-list-item>
     <v-list nav dense>

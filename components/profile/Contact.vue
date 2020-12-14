@@ -52,7 +52,9 @@
         </v-row>
         <v-row class="hidden-lg-and-up">
           <v-col>
-            <NuxtLink to="/blog"><v-btn class="orange">Blog</v-btn></NuxtLink>
+            <NuxtLink to="/blog"
+              ><v-btn class="orange black--text">Blog</v-btn></NuxtLink
+            >
           </v-col>
         </v-row>
       </v-col>
