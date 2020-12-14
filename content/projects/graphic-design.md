@@ -21,7 +21,7 @@ previewImage: slider/music-icon.png
 ### Rampart Corp
 
 <dynamic-image filename="rampart/canadaday.jpg" :img-height="600"></dynamic-image>
-<dynamic-image filename="rampart/4july.jpg" :img-height="600"></dynamic-image>
+<dynamic-image filename="rampart/4july.JPG" :img-height="600"></dynamic-image>
 <dynamic-image filename="rampart/fathersday.jpg" :img-height="600"></dynamic-image>
 <dynamic-image filename="rampart/glock.jpg" :img-height="600"></dynamic-image>
 <dynamic-image filename="rampart/ammo.jpg" :img-height="600"></dynamic-image>
