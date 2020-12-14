@@ -8,7 +8,8 @@ previewImage: slider/music-icon.png
 
 ### Scribendi
 
-<dynamic-image filename="scribendi/scribendi.jpg" :img-height="400"></dynamic-image>
+<dynamic-image filename="scribendi/scribendi.jpg" :img-height="732"></dynamic-image>
+<dynamic-image filename="scribendi/banner-scribendi.jpg" :img-height="650"></dynamic-image>
 
 ### The Community Network
 
