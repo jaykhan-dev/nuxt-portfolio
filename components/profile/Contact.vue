@@ -1,7 +1,7 @@
 <template>
   <v-container class="pa-0">
     <v-row>
-      <v-col cols="12" md="8">
+      <!-- <v-col cols="12" md="8">
         <v-row>
           <v-col cols="12">
             <p class="text-h6 orange--text">Send me a message:</p>
@@ -22,8 +22,8 @@
             </form>
           </v-col>
         </v-row>
-      </v-col>
-      <!-- <v-col>
+      </v-col> -->
+      <v-col>
         <v-row>
           <v-col>
             <p class="orange--text text-h6">Contact Info</p>
@@ -52,17 +52,17 @@
             <NuxtLink to="/blog"><v-btn class="orange">Blog</v-btn></NuxtLink>
           </v-col>
         </v-row>
-      </v-col> -->
+      </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-// import SocialMedia from '@/components/SocialMedia'
+import SocialMedia from '@/components/SocialMedia'
 
 export default {
   components: {
-    // SocialMedia,
+    SocialMedia,
   },
 }
 </script>
