@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container
+    <!-- <v-container
       v-for="(component, index) in components"
       :id="component.name"
       :key="index"
@@ -13,6 +13,21 @@
       fluid
     >
       <component :is="component.name"></component>
+    </v-container> -->
+    <v-container>
+      <Name />
+    </v-container>
+    <v-container>
+      <About />
+    </v-container>
+    <v-container>
+      <History />
+    </v-container>
+    <v-container>
+      <Projects />
+    </v-container>
+    <v-container>
+      <Contact />
     </v-container>
   </div>
 </template>
