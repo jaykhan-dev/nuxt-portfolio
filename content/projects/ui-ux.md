@@ -1,7 +1,7 @@
 ---
 title: UI/UX Design
 description: Scribendi
-previewImage: slider/music-icon.png
+previewImage: slider/ui-ux.png
 ---
 
 # UI/UX Design

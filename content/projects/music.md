@@ -1,6 +1,7 @@
 ---
 title: Music
 description: Melange Arts
+previewImage: slider/music.svg
 ---
 
 # Music

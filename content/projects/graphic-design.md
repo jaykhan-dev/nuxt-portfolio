@@ -1,7 +1,7 @@
 ---
 title: Graphic Design
 description: Scribendi, The Community Network, Rampart Corp
-previewImage: slider/music-icon.png
+previewImage: slider/graphic-design.svg
 ---
 
 # Graphic Design
