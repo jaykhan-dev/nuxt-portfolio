@@ -1,11 +1,11 @@
 <template>
   <v-container class="pa-0">
     <v-row>
-      <!-- <v-col cols="12" md="8">
+      <v-col cols="12" md="8">
         <v-row>
           <v-col cols="12">
             <p class="text-h6 orange--text">Send me a message:</p>
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" action="/" method="POST" data-netlify="true">
               <v-text-field type="text" name="name" label="Name"></v-text-field>
               <v-text-field
                 type="email"
@@ -15,14 +15,16 @@
               ></v-text-field>
               <v-textarea name="message" label="Message"></v-textarea>
               <v-row>
-                <v-btn type="submit" class="orange ml-auto mr-3"
-                  >Contact Me</v-btn
-                >
+                <v-col>
+                  <v-btn type="submit" class="orange ml-auto mr-3"
+                    >Contact Me</v-btn
+                  >
+                </v-col>
               </v-row>
             </form>
           </v-col>
         </v-row>
-      </v-col> -->
+      </v-col>
       <v-col>
         <v-row>
           <v-col>
