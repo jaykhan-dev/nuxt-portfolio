@@ -1,7 +1,7 @@
 ---
 title: UI/UX Design
 description: Scribendi
-previewImage: slider/ui-ux.png
+previewImage: slider/ui-ux.svg
 ---
 
 # UI/UX Design
