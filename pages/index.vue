@@ -21,7 +21,7 @@
 import About from '@/components/profile/About'
 import Name from '@/components/profile/Name'
 import History from '@/components/profile/History'
-// import Contact from '@/components/profile/Contact'
+import Contact from '@/components/profile/Contact'
 import Projects from '@/components/profile/Projects'
 import { mapState } from 'vuex'
 
@@ -30,7 +30,7 @@ export default {
     About,
     Name,
     History,
-    // Contact,
+    Contact,
     Projects,
   },
   layout: 'default',
