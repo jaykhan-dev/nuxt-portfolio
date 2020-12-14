@@ -58,11 +58,11 @@
 </template>
 
 <script>
-import SocialMedia from '@/components/SocialMedia'
+// import SocialMedia from '@/components/SocialMedia'
 
 export default {
   components: {
-    SocialMedia,
+    // SocialMedia,
   },
 }
 </script>
