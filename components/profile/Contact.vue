@@ -1,7 +1,7 @@
 <template>
   <v-container class="pa-0">
     <v-row>
-      <v-col cols="12" md="8">
+      <!-- <v-col cols="12" md="8">
         <v-row>
           <v-col cols="12">
             <p class="text-h6 orange--text">Send me a message:</p>
@@ -23,7 +23,7 @@
             </form>
           </v-col>
         </v-row>
-      </v-col>
+      </v-col> -->
       <v-col>
         <v-row>
           <v-col>
@@ -42,6 +42,8 @@
             </div>
           </v-col>
         </v-row>
+      </v-col>
+      <v-col>
         <v-row class="hidden-lg-and-up">
           <v-col>
             <p class="orange--text text-h6">Social Media</p>
