@@ -8,7 +8,7 @@ export default {
   mode: 'universal',
   target: 'static',
   head: {
-    title: 'Riza Khan | Web Developer',
+    title: 'Jawad Khan Portfolio',
     meta: [
       ...meta,
       { charset: 'utf-8' },

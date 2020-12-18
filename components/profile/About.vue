@@ -6,17 +6,18 @@
           <v-col>
             <p class="text-h3 orange--text">Who I am</p>
             <p class="text-body-2 white--text">
-              Front-end developer located in Canada, I've been working as a
-              freelancer on Upwork for a couple of years now.
+              Based in Canada, I am originally from Kashmir. I am currently
+              learning French.
             </p>
             <p class="text-body-2 white--text">
-              I cut my teeth creating Wordpress themes but eventually moved into
-              Javascript development. When I discovered VueJS I was hooked and
-              here we are.
+              I started as a graphic designer but eventually moved onto UI/UX
+              because it seemed like the next logical step. I enjoy creating
+              interactive experiences and learning new tools and technologies.
             </p>
             <p class="text-body-2 white--text">
-              I also enjoy learning about and then blogging about what I've
-              learnt.
+              My goal is to eventually create a mixed-media publishing company
+              and expand my design skills to create stellar applications and
+              websites.
             </p>
           </v-col>
         </v-row>

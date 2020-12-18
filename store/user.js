@@ -16,69 +16,81 @@ export const state = () => ({
     },
   ],
   socialMedia: [
-    { name: 'earth', link: 'https://www.upwork.com/fl/rizakhan2?viewMode=1' },
+    {
+      name: 'earth',
+      link: 'https://www.upwork.com/freelancers/~014489ba7a4c22b2bf?viewMode=1',
+    },
     {
       name: 'linkedin',
-      link: 'https://www.linkedin.com/in/riza-khan-68499b193/',
+      link: 'https://www.linkedin.com/in/jkhanprofile/',
     },
-    { name: 'github', link: 'https://github.com/RizaHKhan' },
+    { name: 'github', link: 'https://github.com/jaykhan-dev' },
   ],
   history: [
     {
       color: 'cyan',
-      year: '2019 August',
-      title: 'Got my first Upwork client',
+      year: 'March 2014 - May 2015',
+      title: 'The Community Network',
       description:
-        "After months of bidding on jobs, got my first contract. Client had misplaced their password and needed their small business website rebuilt. I took the opportunity and managed to get a 5/5 star review.',",
+        'The Community Network was a company based in the UK.  They installed screens in medical waiting rooms and the ads that the graphics design team created were played on rotation. This was my first design job.',
+    },
+    {
+      color: 'red',
+      year: 'December 2015 - June 2016',
+      title: 'Print Three Ottawa',
+      description:
+        'Created some graphic design material for local clients and did some UX research for a possible new Print Three website.',
     },
     {
       color: 'green',
-      year: '2019 September',
-      title: 'Second Upwork Contract',
+      year: 'August 2016 - April 2017',
+      title: 'In Air Marketing',
       description:
-        'Same client needed another website rebuilt. I really expanded my skills here by creating a brand new theme from scratch. Wonderful learning experience',
+        'Advertising on a freelance basis.  The final product was aired in waiting rooms around Canada.',
     },
     {
       color: 'pink',
-      year: '2019 Ocotober',
-      title: 'Broadstreet Ads',
+      year: 'April 2017 - September 2017',
+      title: 'Rampart Corp',
       description:
-        'Joined a ad agency based out of New York, US. An amazing experience that exposed me to many new technologies. Had to come upto speed with Ruby On Rails, VueJS. Also involved with lots of vanilla Javascript while building ad formats. Great experience, will always be indebted to Kenny.',
+        'Rampart Corp supplies operational equipment to those in the Police or the Army.  I designed some material for social media, helped with data entry and marketing.',
     },
     {
       color: 'amber',
-      year: '2020 September',
-      title: 'Redman Technologies',
+      year: 'September 2018 - November 2019',
+      title: 'Scribendi Inc',
       description:
-        'After my Broadstreet Ads contract ended I got a brief contract with a technology company out in Alberta. Great experience working on their VueJS application. Stressful but I go through it with flying colors.',
+        'Scribendi provides English Editing and Proofreading services online. They are based in Chatham, Ontario, but also have an office in Montreal. I learnt a lot about UI/UX during my time here.  ',
     },
     {
       color: 'orange',
-      year: '2020 October',
-      title: 'Passageways',
+      year: '2020 - present ',
+      title: 'Keywords Studios',
       description:
-        'A three month long contract that really exposed me to VueJS at a production level on a daily basis. Fast paced and stressful, this was the best experience of my live. A great experience so far.',
+        'Based in Dublin, Keywords Studios has locations all over the world.  They primarily service the video game industry. I worked in a large team in office and from home (due to COVID).',
     },
   ],
   skills: [
     {
-      title: 'Web Development',
+      title: 'UI/UX Design',
       description:
-        'Proficient with VueJS. All kinds of CSS frameworks and CSS in general. NodeJS and MongoDB for the backend.',
+        'Adobe XD, Invision Studio, Figma, interactive prototyping, wireframing, UX research, flow charts, Git, Github',
     },
     {
-      title: 'QA',
-      description:
-        'I have been on both sides, where I have built features and had them go through the QA process and fix any issues found. I have also been a QA and tried to find issues.',
+      title: 'Video Editing and Motion Graphics',
+      description: 'Adobe Premiere Pro, After Effects',
     },
     {
-      title: 'Testing',
-      description: 'Proficient with Jest and Testing Library.',
+      title: 'Graphic Design',
+      description: 'Adobe Photoshop, Illustrator, Typography',
     },
     {
-      title: 'Data Scrapping',
-      description:
-        'Proficient with Puppeteer to get data from websites that do not offer APIs.',
+      title: 'Music Production',
+      description: 'Ableton, Serato DJ, Boss ME-25, Novation Bass Station II',
+    },
+    {
+      title: 'Functionality QA Testing',
+      description: 'PS4, PS5, PC, XB1, Jira, Confluence',
     },
   ],
 })

@@ -30,11 +30,13 @@
             <p class="orange--text text-h6">Contact Info</p>
             <div class="d-flex">
               <p class="orange--text text-body-2">Email</p>
-              <p class="ml-2 white--text text-body-2">khanriza@gmail.com</p>
+              <p class="ml-2 white--text text-body-2">
+                jaykhan.sound@gmail.com
+              </p>
             </div>
             <div class="d-flex">
               <p class="orange--text text-body-2">Phone</p>
-              <p class="ml-2 white--text text-body-2">613-296-2462</p>
+              <p class="ml-2 white--text text-body-2">613-402-0825</p>
             </div>
             <div class="d-flex">
               <p class="orange--text text-body-2">Location</p>

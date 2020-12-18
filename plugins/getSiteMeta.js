@@ -1,7 +1,7 @@
-const type = 'Riza Khan Portfolio'
-const url = 'https://khanriza.com'
+const type = 'Jawad Khan Portfolio'
+const url = 'https://jkhanportfolio.com'
 const title = 'My Portofolio and Blog Site'
-const description = 'Showcaseing the projects I have been a part of'
+const description = 'My work so far'
 
 export default (meta) => {
   return [
