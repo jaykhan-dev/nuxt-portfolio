@@ -56,6 +56,12 @@ export const state = () => ({
         'Rampart Corp supplies operational equipment to those in the Police or the Army.  I designed some material for social media, helped with data entry and marketing.',
     },
     {
+      color: 'blue',
+      year: 'February 2018 - August 2018',
+      title: 'CMHC',
+      description: 'Contract as a Digital Print Analyst using SAP.',
+    },
+    {
       color: 'amber',
       year: 'September 2018 - November 2019',
       title: 'Scribendi Inc',
@@ -73,8 +79,7 @@ export const state = () => ({
   skills: [
     {
       title: 'UI/UX Design',
-      description:
-        'Adobe XD, Invision Studio, Figma, interactive prototyping, wireframing, UX research, flow charts, Git, Github',
+      description: 'Adobe XD, Invision Studio, Figma,',
     },
     {
       title: 'Video Editing and Motion Graphics',
