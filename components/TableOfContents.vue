@@ -2,23 +2,14 @@
   <div>
     <v-list-item two-line>
       <v-list-item-content class="pb-5 text-center">
-<<<<<<< HEAD
-        <v-list-item-title class="orange--text display-2"
-          >J. Khan</v-list-item-title
-        >
+        <NuxtLink to="/">
+          <v-list-item-title class="orange--text display-2"
+            >J. Khan</v-list-item-title
+          >
+        </NuxtLink>
         <v-list-item-subtitle class="text-h6 font-weight-light white--text"
           >Portfolio</v-list-item-subtitle
         >
-=======
-        <NuxtLink to="/">
-          <v-list-item-title class="orange--text display-2">{{
-            username
-          }}</v-list-item-title>
-        </NuxtLink>
-        <v-list-item-subtitle class="text-h6 font-weight-light white--text">{{
-          expertOf
-        }}</v-list-item-subtitle>
->>>>>>> d3f6249 (Added universal button to homepage and back to blog button)
       </v-list-item-content>
     </v-list-item>
     <v-list-item>
