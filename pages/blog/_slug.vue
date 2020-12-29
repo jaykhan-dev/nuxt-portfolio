@@ -1,7 +1,7 @@
 <template>
   <v-container>
-    <v-row>
-      <v-col cols="12">
+    <v-row class="justify-center">
+      <v-col cols="12" md="10" lg="6">
         <nuxt-content :document="doc" />
       </v-col>
     </v-row>
